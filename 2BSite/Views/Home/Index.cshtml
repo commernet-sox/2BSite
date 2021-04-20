@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .secitem a {
+        padding: 0 5px;
+        line-height: 20px;
+        /*margin-top: 10px;*/
+        margin-right: 8px;
+        color: #666666;
+        background: #ffffff;
+        position: relative;
+        display: block;
+        float: left;
+    }
+    .secitem {
+        margin-top: 10px;
+    }
+        .secitem a:hover {
+            background: #00B6FB;
+            border-radius: 3px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .secitem a.select {
+            background: #00B6FB;
+            border-radius: 3px;
+            color: #fff;
+            text-decoration: none;
+        }
+</style>
+<div class="row">
+    <div class="col-xs-2 secitem">
+        <p>省份:</p>
+    </div>
+    <div class="col-xs-10 secitem">
+        <a href="#" class="select">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-2 secitem">
+        <p>筛选:</p>
+    </div>
+    <div class="col-xs-10 secitem">
+        <a href="#">浙江</a>
+        <a href="#">浙江</a>
+    </div>
+</div>
+
+<div class="hr hr32 hr-dotted"></div>
+<div class="text-center">
+    <h1 class="display-4">Welcome wangfeng</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@section scripts{
+    <script>
+        $('.secitem a').click(function () {
+            $(this).addClass('select');
+            $(this).siblings("a").removeClass("select");
+        });
+    </script>
+}

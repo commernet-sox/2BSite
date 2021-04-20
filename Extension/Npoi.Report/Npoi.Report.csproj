@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;PROD</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AxinLib.IO.CSV" Version="1.0.0" />
+    <PackageReference Include="NPOI" Version="2.5.2" />
+    <PackageReference Include="NPOI.Extend" Version="1.1.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.deps.json
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\bin\Debug\netstandard2.0\Core.Database.Extension.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\bin\Debug\netstandard2.0\Core.Infrastructure.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.CopyComplete
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csprojAssemblyReference.cache

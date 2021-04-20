@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_2BSite</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="2.1.0" />
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="itext7" Version="7.1.4" />
+    <PackageReference Include="itext7.font-asian" Version="7.1.4" />
+    <PackageReference Include="itext7.pdfhtml" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.13" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NLog.Targets.ElasticSearch" Version="7.1.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.7.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.30" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2BSite.Service\2BSite.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core.Database.Extension">
+      <HintPath>D:\杭加项目\ShareDlls\Core.Database.Extension.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Core.Database.Repository">
+      <HintPath>D:\杭加项目\ShareDlls\Core.Database.Repository.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Core.Infrastructure">
+      <HintPath>D:\杭加项目\ShareDlls\Core.Infrastructure.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Core.Redis">
+      <HintPath>D:\杭加项目\ShareDlls\Core.Redis.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="Core.WebServices">
+      <HintPath>D:\杭加项目\ShareDlls\Core.WebServices.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
