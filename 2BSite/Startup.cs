@@ -66,17 +66,17 @@ namespace _2BSite
                 option.AddPolicy("2BSite_cros", policy => policy.AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials()
-                .WithOrigins("http://localhost:5200"));
+                .WithOrigins("http://localhost:5000"));
             });
 
             
             //添加session
-            services.AddSession(options =>
-            {
-                //本方法的底层缓存方法使用的就是IDistributedCache
-                options.IdleTimeout = TimeSpan.FromMinutes(30); //session活期时间
-                options.Cookie.HttpOnly = true;//设为httponly
-            });
+            //services.AddSession(options =>
+            //{
+            //    //本方法的底层缓存方法使用的就是IDistributedCache
+            //    options.IdleTimeout = TimeSpan.FromMinutes(30); //session活期时间
+            //    options.Cookie.HttpOnly = true;//设为httponly
+            //});
 
 
 
@@ -139,7 +139,7 @@ namespace _2BSite
                 app.UseHsts();
             }
             app.UseCors("2BSite_cros");
-            app.UseSession();
+            //app.UseSession();
 
             app.UseResponseCompression();
             app.UseResponseCaching();

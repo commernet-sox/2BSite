@@ -481,3 +481,4 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\tr\Microsoft.Cod
 C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Part_1.cshtml.g.cs

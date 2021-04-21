@@ -1,6 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
+@*@model _2BSite.Controllers.TestModel*@
 <style>
     .secitem a {
         padding: 0 5px;
@@ -13,15 +15,18 @@
         display: block;
         float: left;
     }
+
     .secitem {
         margin-top: 10px;
     }
+
         .secitem a:hover {
             background: #00B6FB;
             border-radius: 3px;
             color: #fff;
             text-decoration: none;
         }
+
         .secitem a.select {
             background: #00B6FB;
             border-radius: 3px;
@@ -34,32 +39,20 @@
         <p>省份:</p>
     </div>
     <div class="col-xs-10 secitem">
-        <a href="#" class="select">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
-        <a href="#">浙江</a>
+        <a href="#" class=" select">浙江</a>
+        <a href="#" >安徽</a>
+        <a href="#" >广东</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
+        <a href="#" >浙江</a>
     </div>
 </div>
 <div class="row">
@@ -73,16 +66,39 @@
 </div>
 
 <div class="hr hr32 hr-dotted"></div>
-<div class="text-center">
-    <h1 class="display-4">Welcome wangfeng</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="part_1">
+
 </div>
+@*@await Html.PartialAsync("Part_1",Model)*@
+
 
 @section scripts{
     <script>
+        $(document).ready(function () {
+            GetInfo("浙江");
+        });
         $('.secitem a').click(function () {
             $(this).addClass('select');
             $(this).siblings("a").removeClass("select");
+            GetInfo($(this).text());
         });
+        function GetInfo(Province) {
+            console.log(Province);
+            $.ajax({
+                type: "Get",
+                cache: false,
+                url: "@Url.Action("Test","Home")",
+                data: { "Province": Province },
+                /*dataType: "json",*/
+                success: function (res) {
+                    $('#part_1').html(res);
+                    console.log("success");
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log("error");
+                }
+            });
+        }
+
     </script>
 }

@@ -33,5 +33,16 @@ namespace _2BSite.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult Test(string Province)
+        {
+            var res = new TestModel() { Data=Province};
+            return PartialView("/Views/Home/Part_1.cshtml",res);
+            //return View("Index",res);
+            //return Json("success");
+        }
+    }
+    public class TestModel
+    {
+        public string Data { get; set; }
     }
 }
