@@ -1,0 +1,9 @@
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\bin\Release\netstandard2.0\Npoi.Mapper.deps.json
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\bin\Release\netstandard2.0\Npoi.Mapper.dll
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\bin\Release\netstandard2.0\Npoi.Mapper.pdb
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.dll
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Release\netstandard2.0\Npoi.Mapper.pdb

@@ -1,0 +1,267 @@
+﻿<link rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/jstree/3.3.11/themes/default/style.min.css" />
+
+<link href="~/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/jqgrid/css/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+<style>
+    .modal.aside-vc .modal-dialog {
+        width:600px !important;
+    }
+</style>
+
+<div class="row">
+    <table id="list10"></table>
+    <div id="pager10"></div>
+    <br />
+    <a href="javascript:void(0)" id="ms1">Get Selected id's</a>
+</div>
+
+
+
+<div id="right-menu" class="modal aside" data-body-scroll="false" data-offset="true" data-placement="right" data-fixed="true" data-backdrop="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header no-padding">
+                <div class="table-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <span class="white">&times;</span>
+                    </button>
+                    Based on Modal boxes
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <h3 class="lighter">权限配置</h3>
+                <div class="row">
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 角色名 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="name" placeholder="角色名" class="col-xs-10 col-sm-4" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 所属系统 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="systemId" placeholder="所属系统" class="col-xs-10 col-sm-4" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 备注 </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="remarks" placeholder="备注" class="col-xs-10 col-sm-4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="jstree">
+
+                    </div>
+                    <button>demo button</button>
+                </div>
+                <div class="row">
+                    <input type="button" value="提交" onclick="Commit()" />
+                </div>
+
+            </div>
+        </div><!-- /.modal-content -->
+
+        <button class="aside-trigger btn btn-info btn-app btn-xs ace-settings-btn" data-target="#right-menu" data-toggle="modal" type="button">
+            <i data-icon1="fa-plus" data-icon2="fa-minus" class="ace-icon fa fa-plus bigger-110 icon-only"></i>
+        </button>
+    </div><!-- /.modal-dialog -->
+</div>
+
+@section scripts{
+    <script src="https://cdn.bootcdn.net/ajax/libs/jstree/3.3.11/jstree.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.jqGrid.src.js"></script>
+    <script type="text/javascript" src="~/assets/js/grid.locale-cn.js"></script>
+    <script src="~/assets/js/jquery.jqGrid.min.js"></script>
+    <script>
+        var node = [
+            { id: 'ajson1', parent: '#', text: 'Simple root node' },
+            { id: 'ajson2', parent: '#', text: 'Root node 2' },
+            { id: 'ajson3', parent: 'ajson2', text: 'Child 1' },
+            { id: 'ajson4', parent: 'ajson2', text: 'Child 2' },
+        ]
+        var selectPermissions = [];
+        
+        //显示主表信息
+        jQuery('#list10').jqGrid({
+
+            //url: '@Url.Action("RoleSearch", "SystemRole")',
+            //url: 'http://localhost:5000/SystemRole/PermissionSearch?q=1&id=0',
+            url: '/SystemRole/RoleSearch?q=1&id=0',
+            //data: grid_data,
+            //datatype: "local",
+            //mtype: "post",
+            datatype: 'json',
+            colNames: ['Id', '角色名', '备注', '所属系统', '创建时间', '创建人', '修改时间','修改人'],
+            colModel: [
+                { label: 'ID', name: 'Id', index: 'id', width: 55 },
+                { label: '角色名', name: 'Name', index: 'invdate', width: 90, editable: true },
+                { label: '备注', name: 'Remarks', index: 'name', width: 100, editable: true },
+                { label: '所属系统', name: 'SystemID', index: 'amount', width: 80, align: 'right', editable: true },
+                { label: '创建时间', name: 'CreateTime', index: 'tax', width: 150, align: 'right', editable: true },
+                { label: '创建人', name: 'Creator', index: 'total', width: 100, align: 'right', editable: true },
+                { label: '修改时间', name: 'ModifyTime', index: 'note', width: 150, sortable: false, editable: true },
+                { label: '修改人', name: 'Modifier', index: 'Remarks', width: 150, sortable: false, editable: true },
+            ],
+            rowNum: 10,
+            rowList: [10, 20, 30],
+            pager: '#pager10',
+            //height: 'auto',        //自动行高
+            //autowidth: true,
+            //shrinkToFit: false,  //设置为true时，列数充满表格，当列数较多时，只会缩小列宽，并不会出现滚动条，需要将属性设置为false
+            sortname: 'Id',
+            //autoScroll: true,    //设置滚动条
+            //altRows: true,        //设置行交替样式
+            //altclass: 'differ', //交替的样式
+            viewrecords: true,
+            sortorder: 'asc',
+            multiselect: true,
+            caption: '角色菜单',
+            editurl: "@Url.Action("PermissionAdd","SystemRole")",
+            loadComplete: function (xhr) {
+                //alert(xhr.responseText);
+            },
+
+        });
+        //jQuery('#list10').jqGrid('navGrid', '#pager10', {
+        //    add: false,
+        //    edit: false,
+        //    del: false,
+        //})
+        $('#list10').navGrid('#pager10', { edit: false, add: false, del: false, search: false, refresh: false, view: false, position: "left", cloneToTop: false })
+
+        jQuery('#ms1').click(function () {
+            var s
+            s = jQuery('#list10').jqGrid('getGridParam', 'selarrrow')
+            alert(s)
+        })
+
+        // 添加一个‘添加’按钮
+        $('#list10').navButtonAdd('#pager10',
+            {
+                buttonicon: "glyphicon glyphicon-plus",
+                title: "添加",
+                caption: "添加",
+                position: "last",
+                onClickButton: addRow
+            });
+        $('#list10').navButtonAdd('#pager10',
+            {
+                buttonicon: "glyphicon glyphicon-edit",
+                title: "编辑",
+                caption: "编辑",
+                position: "last",
+                onClickButton: editorRow
+            });
+        //jQuery("#list10").jqGrid('inlineNav', "#pager10");
+        function addRow() {
+            console.log("add...");
+            var ref = $('#jstree').jstree(true);
+            ref.deselect_all();
+            $('#right-menu').modal('show');
+        }
+        function editorRow() {
+            console.log("editorRow...");
+            var ref = $('#jstree').jstree(true);
+            ref.deselect_all();
+            //$('#right-menu').modal('show');
+            var id = jQuery('#list10').jqGrid('getGridParam', 'selarrrow');
+            $.ajax({
+                url: "@Url.Action("GetRolePermissionsId", "SystemRole")",    //请求的url地址
+                dataType: "json",   //返回格式为json
+                async: false,//请求是否异步，默认为异步，这也是ajax重要特性
+                data: { id: id },   //参数值,键值对
+                type: "POST",   //请求方式
+                beforeSend: function () {
+                    //请求前的处理
+                },
+                success: function (res) {
+                    console.log("success...");
+                    $('#name').val(res.Name);
+                    $('#systemId').val(res.SystemID);
+                    $('#remarks').val(res.Remarks);
+                    for (var i = 0; i < res.Permissions.length; i++) {
+                        $('#jstree').jstree(true).select_node(res.Permissions[i]);
+                    }
+                },
+                complete: function () {
+                    //请求完成的处理
+                    $('#right-menu').modal('show');
+
+                },
+                error: function (res) {
+                    //请求出错处理
+                }
+            });
+        }
+        function Commit() {
+            var name = $('#name').val();
+            var systemId = $('#systemId').val();
+            var remarks = $('#remarks').val();
+            var id = jQuery('#list10').jqGrid('getGridParam', 'selarrrow');
+            var data = {Id: id, Name: name, SystemID: systemId, Remarks: remarks, Permissions:selectPermissions };
+            $.ajax({
+                url: "@Url.Action("CommitPermissions", "SystemRole")",    //请求的url地址
+                dataType: "json",   //返回格式为json
+                async: false,//请求是否异步，默认为异步，这也是ajax重要特性
+                data: data,   //参数值,键值对
+                type: "POST",   //请求方式
+                beforeSend: function () {
+                    //请求前的处理
+                },
+                success: function (req) {
+                    console.log("success...");
+                },
+                complete: function () {
+                    //请求完成的处理
+                    $('#right-menu').modal('hide');
+
+                },
+                error: function (res) {
+                    //请求出错处理
+                }
+            });
+        }
+        //编辑操作
+        var data = {}
+        $(function () {
+            $('#jstree').jstree({
+                core: {
+                    check_callback: false,
+                    multiple: true,
+                    //data: node,
+                    data: {
+                        url: '/SystemRole/PermissionMenuSearch',
+                        datatype: 'json'
+                    }
+                },
+                checkbox: {
+                    keep_selected_style: false,
+                },
+                plugins: ['checkbox'],
+            })
+
+            // 6 create an instance when the DOM is ready
+            //$('#jstree').jstree()
+            // 7 bind to events triggered on the tree
+            $('#jstree').on('changed.jstree', function (e, data) {
+                console.log(data.selected)
+                selectPermissions = data.selected;
+            })
+            // 8 interact with the tree - either way is OK
+            $('button').on('click', function () {
+                $('#jstree').jstree(true).select_node('ajson3')
+                $('#jstree').jstree('select_node', 'ajson2')
+                // $.jstree.reference('#jstree').select_node('2')
+            })
+        })
+    </script>
+
+}

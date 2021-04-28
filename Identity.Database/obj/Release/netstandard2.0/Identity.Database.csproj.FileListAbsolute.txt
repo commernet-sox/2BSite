@@ -1,0 +1,12 @@
+D:\HR_Management\Data\Identity.Database\bin\Release\netstandard2.0\Identity.Database.deps.json
+D:\HR_Management\Data\Identity.Database\bin\Release\netstandard2.0\Identity.Database.dll
+D:\HR_Management\Data\Identity.Database\bin\Release\netstandard2.0\Identity.Database.pdb
+D:\HR_Management\Data\Identity.Database\bin\Release\netstandard2.0\Core.Database.Extension.dll
+D:\HR_Management\Data\Identity.Database\bin\Release\netstandard2.0\Core.Infrastructure.dll
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.csprojAssemblyReference.cache
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.AssemblyInfoInputs.cache
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.AssemblyInfo.cs
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.csproj.CopyComplete
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.dll
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.pdb
+D:\HR_Management\Data\Identity.Database\obj\Release\netstandard2.0\Identity.Database.csproj.CoreCompileInputs.cache

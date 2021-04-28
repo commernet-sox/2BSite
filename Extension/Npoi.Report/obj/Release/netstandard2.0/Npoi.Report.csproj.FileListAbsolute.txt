@@ -1,0 +1,9 @@
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\bin\Release\netstandard2.0\Npoi.Report.deps.json
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\bin\Release\netstandard2.0\Npoi.Report.dll
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\bin\Release\netstandard2.0\Npoi.Report.pdb
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.dll
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Release\netstandard2.0\Npoi.Report.pdb

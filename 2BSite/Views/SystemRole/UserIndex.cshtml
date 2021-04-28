@@ -1,0 +1,118 @@
+﻿@{
+    //Layout = "_LayoutOld";
+}
+
+<link href="~/jqgrid/css/ui.jqgrid.css" rel="stylesheet" />
+<link href="~/jqgrid/css/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+@*<link href="~/assets/css/jquery-ui.min.css" rel="stylesheet" />*@
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-size: 75%;
+    }
+    .differ {
+        background-color: #DDDDDC;
+    }
+</style>
+
+<div class="row">
+
+    <table id="list10"></table>
+    <div id="pager10"></div>
+    <br />
+
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/assets/js/jquery.jqGrid.src.js"></script>
+    <script type="text/javascript" src="~/assets/js/grid.locale-cn.js"></script>
+    <script src="~/assets/js/jquery.jqGrid.min.js"></script>
+    <script src="~/assets/js/md5.js"></script>
+
+    <script>
+
+        jQuery('#list10').jqGrid({
+
+            //url: '@Url.Action("PermissionSearch","SystemRole")',
+            //url: 'http://localhost:5000/SystemRole/PermissionSearch?q=1&id=0',
+            url: '/SystemRole/UserSearch?q=1&id=0',
+            //data: grid_data,
+            //datatype: "local",
+            //mtype: "post",
+            datatype: 'json',
+            //colNames: ['Id', 'AliasName', 'LoginName', 'IsDisabled', 'LastLoginDatetime', 'LoginNumber', 'IsAdmin', 'CompanyId','Company'],
+            colModel: [
+                { label: 'Id', name: 'Id', index: 'id', width: 55 },
+                { label: '别名',name: 'AliasName', index: 'invdate', width: 90, editable: true },
+                { label: '登录名', name: 'LoginName', index: 'name', width: 100, editable: true },
+                { label: '密码', name: 'Password', index: 'name', width: 100, editable: true },
+                { label: '是否禁用', name: 'IsDisabled', index: 'amount', width: 80, align: 'right', editable: true,edittype: 'select', editoptions: { value: "0:否;1:是" } },
+                { label: '最后登录时间',name: 'LastLoginDatetime', index: 'tax', width: 80, align: 'right', editable: true },
+                { label: '登录次数',name: 'LoginNumber', index: 'total', width: 100, align: 'right', editable: true },
+                { label: '是否管理员', name: 'IsAdmin', index: 'note', width: 150, sortable: false, editable: true, edittype: 'select', editoptions: { value: "0:否;1:是" } },
+                {
+                    label: '用户角色', name: 'UserRoleId', index: 'note', width: 150, sortable: false, editable: true, edittype: 'select', editoptions: { value: "1:查询员" },
+                    formatter: 'select'
+                },
+                {
+                    label: '用户系统', name: 'UserSystemId', index: 'note', width: 150, sortable: false, editable: true, edittype: 'select', editoptions: { value: "1:1;2:2;3:3" }
+                },
+            ],
+            rowNum: 10,
+            rowList: [10, 20, 30],
+            //beforeRequest: function () {
+            //    console.log("beforeRequest。。。");
+            //    var roleParam = [];
+            //    var systemParam = [];
+            //    roleParam.push({ RoleId: $("#jqg1_UserRole").val() });
+            //    systemParam.push({ SystemId: $("#jqg1_UserSystem").val() });
+            //    $("#list10").jqGrid("setGridParam", {
+            //        postData: {
+            //            'UserRole': roleParam,
+            //            'UserSystem': systemParam
+            //        }
+                    
+            //    });
+            //},
+            pager: '#pager10',
+            //height: 'auto',        //自动行高
+            //autowidth: true,
+            //shrinkToFit: false,  //设置为true时，列数充满表格，当列数较多时，只会缩小列宽，并不会出现滚动条，需要将属性设置为false
+            sortname: 'Id',
+            //autoScroll: true,    //设置滚动条
+            altRows: true,        //设置行交替样式
+            altclass: 'differ', //交替的样式
+            viewrecords: true,
+            sortorder: 'asc',
+            multiselect: false,
+            caption: '账号菜单',
+            editurl: "@Url.Action("UserAdd","SystemRole")",
+            
+            loadComplete: function (xhr) {
+                //alert(xhr.responseText);
+            },
+
+        })
+        jQuery('#list10').jqGrid('navGrid', '#pager10', {
+            add: false,
+            edit: false,
+            del: false,
+        })
+        // 由于jqgrid表格并不支持响应式操作，所以需要手动编写代码
+        // 设置jqgrid的宽度和容器一样
+        var parent_dom = $("#list10").closest('[class*="col-"]');
+        $("#list10").jqGrid('setGridWidth', parent_dom.width());
+        // 改变浏览器窗口大小时
+        $(window).on('resize.list10', function () {
+            //重新抓父容器新的width
+            var parent_dom = $("#list10").closest('[class*="col-"]');
+            $("#list10").jqGrid('setGridWidth', parent_dom.width());
+        });
+        jQuery("#list10").jqGrid('inlineNav', "#pager10");
+
+        
+    </script>
+}
+

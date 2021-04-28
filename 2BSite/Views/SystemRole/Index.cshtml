@@ -1,0 +1,50 @@
+﻿@{
+    var userdto = Newtonsoft.Json.JsonConvert.DeserializeObject<_2BSite.Service.DTO.Identity.UserDTO>(Context.Session.GetString("User"));
+    var userPermissions = Newtonsoft.Json.JsonConvert.DeserializeObject<List<_2BSite.Service.Model.UserPermission>>(Context.Session.GetString("UserPermissions"));
+
+}
+@model _2BSite.Models.MenuModel
+
+<div class="row">
+    <div class="col-xs-3">
+        <a href="@Url.Action("Index","SystemRole")" class="thumbnail" target="_blank">
+            <p>主页</p>
+        </a>
+    </div>
+    @if (userdto.IsAdmin || userPermissions.Where(t => t.Action == "PermissionIndex" && t.Control == "SystemRole").FirstOrDefault() != null)
+    {
+        <div class="col-xs-3">
+            <a href="@Url.Action("PermissionIndex","SystemRole")" class="thumbnail" target="_blank">
+                <p>权限管理</p>
+            </a>
+        </div>
+    }
+
+    @if (userdto.IsAdmin || userPermissions.Where(t => t.Action == "UserIndex" && t.Control == "SystemRole").FirstOrDefault() != null)
+    {
+        <div class="col-xs-3">
+            <a href="@Url.Action("UserIndex","SystemRole")" class="thumbnail" target="_blank">
+                <p>账号管理</p>
+            </a>
+        </div>
+    }
+    @if (userdto.IsAdmin || userPermissions.Where(t => t.Action == "RoleIndex" && t.Control == "SystemRole").FirstOrDefault() != null)
+    {
+        <div class="col-xs-3">
+            <a href="@Url.Action("RoleIndex","SystemRole")" class="thumbnail" target="_blank">
+                <p>角色管理</p>
+            </a>
+        </div>
+    }
+
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+
+        });
+
+
+    </script>
+}
