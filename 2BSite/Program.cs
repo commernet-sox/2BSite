@@ -40,8 +40,8 @@ namespace _2BSite
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services => services.AddAutofac())
-                .UseContentRoot(Directory.GetCurrentDirectory()).UseUrls("http://*:5000")
-                 .UseNLog()
+                .UseContentRoot(Directory.GetCurrentDirectory()).UseUrls("http://*:5050")
+                 .UseNLog()//≈‰÷√»’÷æ
                 .UseStartup<Startup>().CaptureStartupErrors(false);
     }
 }

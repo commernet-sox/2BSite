@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-
+    var userdto = Newtonsoft.Json.JsonConvert.DeserializeObject<_2BSite.Service.DTO.Identity.UserDTO>(Context.Session.GetString("User"));
+    var userPermissions = Newtonsoft.Json.JsonConvert.DeserializeObject<List<_2BSite.Service.Model.UserPermission>>(Context.Session.GetString("UserPermissions"));
 }
 @*@model _2BSite.Controllers.TestModel*@
 <style>
@@ -69,6 +70,9 @@
 <div id="part_1">
 
 </div>
+<div class="row">
+    <p onclick="getUsers()">获取用户列表</p>
+</div>
 @*@await Html.PartialAsync("Part_1",Model)*@
 
 
@@ -93,6 +97,23 @@
                 success: function (res) {
                     $('#part_1').html(res);
                     console.log("success");
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    console.log("error");
+                }
+            });
+        }
+
+        function getUsers() {
+            console.log("getUsers...");
+            $.ajax({
+                type: "Get",
+                cache: false,
+                url: "@Url.Action("GetUserInfo", "Home")",
+                /*dataType: "json",*/
+                success: function (res) {
+                    
+                    console.log(res);
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
                     console.log("error");

@@ -2234,6 +2234,19 @@
           "bin/placeholder/2BSite.Database.dll": {}
         }
       },
+      "Identity.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.13"
+        },
+        "compile": {
+          "bin/placeholder/Identity.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Identity.Database.dll": {}
+        }
+      },
       "Npoi.Mapper/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -7530,6 +7543,11 @@
       "path": "../2BSite.Database/2BSite.Database.csproj",
       "msbuildProject": "../2BSite.Database/2BSite.Database.csproj"
     },
+    "Identity.Database/1.0.0": {
+      "type": "project",
+      "path": "../Identity.Database/Identity.Database.csproj",
+      "msbuildProject": "../Identity.Database/Identity.Database.csproj"
+    },
     "Npoi.Mapper/1.0.0": {
       "type": "project",
       "path": "../Extension/Npoi.Mapper/Npoi.Mapper.csproj",
@@ -7546,6 +7564,7 @@
       "2BSite.Database >= 1.0.0",
       "AutoMapper >= 8.0.0",
       "Autofac >= 4.8.1",
+      "Identity.Database >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Http >= 2.2.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
@@ -7609,6 +7628,9 @@
             },
             "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
               "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj"
+            },
+            "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj": {
+              "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj"
             }
           }
         }

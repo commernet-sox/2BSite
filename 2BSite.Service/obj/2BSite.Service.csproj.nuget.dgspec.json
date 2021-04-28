@@ -129,6 +129,9 @@
               },
               "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
                 "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj"
+              },
+              "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj": {
+                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj"
               }
             }
           }
@@ -358,6 +361,83 @@
             "System.Text.Encoding.CodePages": {
               "target": "Package",
               "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj",
+        "projectName": "Identity.Database",
+        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj",
+        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.27.1.28:1024/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [

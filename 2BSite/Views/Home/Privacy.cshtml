@@ -4,3 +4,42 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+<div id="app">
+    <p>{{message}}&nbsp;&nbsp;{{msg}}</p>
+    <input type="text" v-model="message" placeholder="请输入">
+    <button v-on:click="conOut">输出</button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: "123465",
+            msg:''
+        },
+        computed: {
+            msg() {
+                console.log("msg==");
+                return '789456';
+            }
+        },
+        methods: {
+            conOut() {
+                console.log(this.message);
+                console.log("调用输出", this.msg);
+                this.msg = this.message;
+            }
+        },
+        beforeMount() {
+            console.log("挂载前生命周期");
+        },
+        mounted() {
+            console.log("挂载完成生命周期");
+        },
+        watch: {
+            'message'() {
+                console.log("监视器调用");
+            }
+        }
+    })
+</script>

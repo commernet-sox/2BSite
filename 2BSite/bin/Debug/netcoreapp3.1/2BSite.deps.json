@@ -3568,6 +3568,7 @@
           "2BSite.Database": "1.0.0",
           "AutoMapper": "8.0.0",
           "Autofac": "4.8.1",
+          "Identity.Database": "1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Http": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
@@ -3586,6 +3587,17 @@
         },
         "compile": {
           "2BSite.Service.dll": {}
+        }
+      },
+      "Identity.Database/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.13"
+        },
+        "runtime": {
+          "Identity.Database.dll": {}
+        },
+        "compile": {
+          "Identity.Database.dll": {}
         }
       },
       "Npoi.Mapper/1.0.0": {
@@ -7044,6 +7056,11 @@
       "sha512": ""
     },
     "2BSite.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Identity.Database/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

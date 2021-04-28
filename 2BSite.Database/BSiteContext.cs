@@ -160,7 +160,7 @@ namespace _2BSite.Database
         public BSiteContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<BSiteContext>();
-            optionsBuilder.UseSqlServer(@"Server=10.27.1.13;Database=Demo_SCM;User=sa;Pwd=wms@123456;");
+            optionsBuilder.UseSqlServer(@"Server=120.55.195.2;Database=BSite;User=sa;Pwd=123qwe!@#;");
 
             return new BSiteContext(optionsBuilder.Options);
         }

@@ -482,3 +482,11 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\zh-Hans\Microsof
 C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\nlog.config
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Part_1.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\Identity.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\Identity.Database.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\SystemRole\Index.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\SystemRole\PermissionIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\SystemRole\RoleIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\SystemRole\UserIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Denied.cshtml.g.cs

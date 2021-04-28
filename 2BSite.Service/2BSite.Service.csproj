@@ -24,6 +24,7 @@
     <ProjectReference Include="..\2BSite.Database\2BSite.Database.csproj" />
     <ProjectReference Include="..\Extension\Npoi.Mapper\Npoi.Mapper.csproj" />
     <ProjectReference Include="..\Extension\Npoi.Report\Npoi.Report.csproj" />
+    <ProjectReference Include="..\Identity.Database\Identity.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +52,10 @@
       <HintPath>D:\杭加项目\ShareDlls\Core.WebServices.dll</HintPath>
       <Private>true</Private>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\Identity\" />
   </ItemGroup>
 
 
