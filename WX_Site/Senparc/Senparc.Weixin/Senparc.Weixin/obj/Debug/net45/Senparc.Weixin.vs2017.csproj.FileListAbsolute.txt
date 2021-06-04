@@ -1,0 +1,13 @@
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Senparc.Weixin.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Newtonsoft.Json.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Senparc.CO2NET.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Senparc.CO2NET.APM.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\net45\Senparc.NeuChar.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.vs2017.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.vs2017.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.vs2017.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.vs2017.csproj.CopyComplete
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\net45\Senparc.Weixin.vs2017.csprojAssemblyReference.cache

@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Senparc\**" />
+    <Compile Remove="WeiXin_WYZJ.CommonService\**" />
+    <EmbeddedResource Remove="Senparc\**" />
+    <EmbeddedResource Remove="WeiXin_WYZJ.CommonService\**" />
+    <None Remove="Senparc\**" />
+    <None Remove="WeiXin_WYZJ.CommonService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.13" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.2" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2BSite.Service\2BSite.Service.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Redis\Senparc.Weixin.Cache.Redis.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.MP.MvcExtension\Senparc.Weixin.MP.MvcExtension.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\Senparc.Weixin.MP.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.TenPay\Senparc.Weixin.TenPay.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.Work\Senparc.Weixin.Work.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin.WxOpen\Senparc.Weixin.WxOpen.vs2017.csproj" />
+    <ProjectReference Include="Senparc\Senparc.Weixin\Senparc.Weixin\Senparc.Weixin.vs2017.csproj" />
+    <ProjectReference Include="WeiXin_WYZJ.CommonService\WX_CommonService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core.Database.Extension">
+      <HintPath>..\ShareDlls\Core.Database.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Database.Repository">
+      <HintPath>..\ShareDlls\Core.Database.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Infrastructure">
+      <HintPath>..\ShareDlls\Core.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Redis">
+      <HintPath>..\ShareDlls\Core.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.WebServices">
+      <HintPath>..\ShareDlls\Core.WebServices.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

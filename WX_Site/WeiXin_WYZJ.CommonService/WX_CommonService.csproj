@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Redis\Senparc.Weixin.Cache.Redis.vs2017.csproj" />
+    <ProjectReference Include="..\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\Senparc.Weixin.MP.vs2017.csproj" />
+    <ProjectReference Include="..\Senparc\Senparc.Weixin.TenPay\Senparc.Weixin.TenPay.vs2017.csproj" />
+    <ProjectReference Include="..\Senparc\Senparc.Weixin.WxOpen\Senparc.Weixin.WxOpen.vs2017.csproj" />
+  </ItemGroup>
+
+</Project>

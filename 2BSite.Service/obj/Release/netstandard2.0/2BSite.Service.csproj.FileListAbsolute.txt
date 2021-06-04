@@ -20,3 +20,5 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Release\netstandard2.0\2BSit
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Release\netstandard2.0\2BSite.Service.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Release\netstandard2.0\2BSite.Service.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Release\netstandard2.0\2BSite.Service.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Release\netstandard2.0\Identity.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Release\netstandard2.0\Identity.Database.pdb

@@ -23,6 +23,8 @@ namespace _2BSite.Service
 
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<MiniProgramVPD>().As<IVPD<BSiteContext>>().InstancePerLifetimeScope();
+
             builder.RegisterType<DemoDefaultVPD>().As<IVPD<BSiteContext>>().InstancePerLifetimeScope();
 
             builder.RegisterType<IdentityVPD>().As<IVPD<IdentityDataContext>>().InstancePerLifetimeScope();

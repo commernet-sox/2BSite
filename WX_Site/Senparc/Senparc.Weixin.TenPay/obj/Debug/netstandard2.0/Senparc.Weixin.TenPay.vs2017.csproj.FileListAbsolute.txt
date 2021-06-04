@@ -1,0 +1,13 @@
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.TenPay.dll.config
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.TenPay.deps.json
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.TenPay.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.TenPay.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\bin\Debug\netstandard2.0\Senparc.Weixin.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.vs2017.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.vs2017.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.vs2017.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.vs2017.csproj.CopyComplete
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.TenPay\obj\Debug\netstandard2.0\Senparc.Weixin.TenPay.vs2017.csprojAssemblyReference.cache

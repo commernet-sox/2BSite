@@ -1,0 +1,8 @@
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\netstandard2.0\Senparc.Weixin.deps.json
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\netstandard2.0\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\bin\Debug\netstandard2.0\Senparc.Weixin.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\netstandard2.0\Senparc.Weixin.vs2017.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\netstandard2.0\Senparc.Weixin.vs2017.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\netstandard2.0\Senparc.Weixin.vs2017.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\netstandard2.0\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin\Senparc.Weixin\obj\Debug\netstandard2.0\Senparc.Weixin.pdb

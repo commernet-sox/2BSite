@@ -433,3 +433,11 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\2BSite.csproj.
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\2BSite.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\2BSite.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\2BSite.genruntimeconfig.cache
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Release\netcoreapp3.1\Identity.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Release\netcoreapp3.1\Identity.Database.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\Home\Denied.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\Index.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\PermissionIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\RoleIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\UserIndex.cshtml.g.cs

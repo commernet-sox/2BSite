@@ -1,0 +1,171 @@
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 10:50:33.6384]
+[线程：1]
+注册总用时：0.0331ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 10:50:33.6599]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 10:50:33.7924]
+[线程：1]
+微信扩展缓存注册总用时：101.4281ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 11:03:18.8297]
+[线程：1]
+注册总用时：0.0082ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 11:03:18.8491]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 11:03:18.9019]
+[线程：1]
+微信扩展缓存注册总用时：13.826ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 11:08:12.2144]
+[线程：1]
+注册总用时：0.0079ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 11:08:12.2365]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 11:08:12.2733]
+[线程：1]
+微信扩展缓存注册总用时：10.4429ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 11:17:28.6953]
+[线程：1]
+注册总用时：0.0391ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 11:17:28.7230]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 11:17:28.7653]
+[线程：1]
+微信扩展缓存注册总用时：12.2581ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 13:08:51.7282]
+[线程：1]
+注册总用时：0.0305ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 13:08:51.7533]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 13:08:51.7932]
+[线程：1]
+微信扩展缓存注册总用时：13.6704ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 13:24:52.8490]
+[线程：1]
+注册总用时：0.0212ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 13:24:52.8745]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 13:24:52.9156]
+[线程：1]
+微信扩展缓存注册总用时：13.9189ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 13:39:11.5583]
+[线程：1]
+注册总用时：0.0222ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 13:39:11.5819]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 13:39:11.6250]
+[线程：1]
+微信扩展缓存注册总用时：13.3782ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 13:48:13.0587]
+[线程：1]
+注册总用时：0.0209ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 13:48:13.0832]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 13:48:13.1291]
+[线程：1]
+微信扩展缓存注册总用时：16.752ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+
+[[[自动注册扩展缓存完成]]]
+[2021/06/04 14:04:08.9692]
+[线程：1]
+注册总用时：0.0306ms
+自动扫描程序集：0个
+扩展缓存：
+
+[[[系统日志]]]
+[2021/06/04 14:04:08.9936]
+[线程：1]
+系统启动
+
+[[[微信扩展缓存注册完成]]]
+[2021/06/04 14:04:09.0498]
+[线程：1]
+微信扩展缓存注册总用时：15.3195ms
+扩展缓存：Senparc.Weixin.Cache.LocalContainerCacheStrategy
+Senparc.Weixin.Cache.Redis.RedisContainerCacheStrategy
+

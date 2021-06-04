@@ -1,0 +1,13 @@
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.dll.config
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.deps.json
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\bin\Debug\netstandard2.0\Senparc.Weixin.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.vs2017.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.vs2017.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.vs2017.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.vs2017.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.vs2017.csproj.CopyComplete
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Memcached\obj\Debug\netstandard2.0\Senparc.Weixin.Cache.Memcached.pdb

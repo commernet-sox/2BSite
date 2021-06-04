@@ -8,12 +8,14 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Core.In
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Core.Infrastructure.Extension.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Core.Redis.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Core.WebServices.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Identity.Database.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Mapper.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Report.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\2BSite.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Mapper.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Mapper.xml
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Report.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Identity.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csprojAssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.AssemblyInfoInputs.cache
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.AssemblyInfo.cs
@@ -21,5 +23,3 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.pdb
-C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Identity.Database.dll
-C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Identity.Database.pdb

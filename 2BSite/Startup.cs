@@ -278,7 +278,7 @@ namespace _2BSite
                     {
                         AliasName = "administrator",
                         LoginName = "administrator",
-                        Password = "3611388ad27022d57bbd8f3938f70615",//hrms!~@
+                        Password = "3611388ad27022d57bbd8f3938f70615",//q1w2E#R$
                         IsDisabled = false,
                         IsAdmin = true,
                         CreateTime = DateTime.Now,
