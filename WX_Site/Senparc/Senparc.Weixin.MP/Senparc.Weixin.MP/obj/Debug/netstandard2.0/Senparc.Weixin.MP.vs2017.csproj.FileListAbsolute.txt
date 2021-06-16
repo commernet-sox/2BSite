@@ -9,3 +9,4 @@ C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.MP\Senparc.Weixi
 C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\obj\Debug\netstandard2.0\Senparc.Weixin.MP.vs2017.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\obj\Debug\netstandard2.0\Senparc.Weixin.MP.dll
 C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\obj\Debug\netstandard2.0\Senparc.Weixin.MP.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\obj\Debug\netstandard2.0\Senparc.Weixin.MP.vs2017.csprojAssemblyReference.cache

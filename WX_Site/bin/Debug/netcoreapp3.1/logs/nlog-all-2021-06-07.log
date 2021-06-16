@@ -1,0 +1,120 @@
+ 
+跟踪标识：              
+时间： 2021-06-07 15:22:54.3499         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 15:26:09.8276         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 15:27:31.0695         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 15:46:17.4407         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 15:50:03.6168         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 15:54:18.8625         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 16:47:52.6281         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM99I3QPBSPN:00000002             
+时间： 2021-06-07 16:48:48.3186         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-07 17:09:09.1778         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM99IFLPJTSQ:00000001             
+时间： 2021-06-07 17:09:32.2615         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================

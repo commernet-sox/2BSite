@@ -37,6 +37,10 @@ namespace _2BSite.Service.Profile
             CreateMap<Systems, SystemDTO>();
             #endregion
 
+            #region WX
+
+            #endregion
+
             CreateMap<CodeMasterDTO, CodeMaster>();
             CreateMap<CodeMaster, CodeMasterDTO>();
         }

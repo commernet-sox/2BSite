@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Senparc.CO2NET.Utilities;
 using WX_CommonService.Utilities;
-using Microsoft.AspNetCore.Http;
 
 
 namespace WX_CommonService.Download

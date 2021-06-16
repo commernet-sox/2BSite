@@ -1,0 +1,290 @@
+ 
+跟踪标识：              
+时间： 2021-06-16 10:16:57.0478         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 10:42:33.2682         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 11:12:06.6662         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 11:13:33.2998         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 11:20:54.2413         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 11:28:28.1172         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 13:57:57.9472         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCQ:00000002             
+时间： 2021-06-16 13:58:39.3568         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9GHEQ8NDCQ:00000002 异常信息:StackExchange.Redis.RedisConnectionException: SocketFailure (WriteSocketError/ConnectionReset, last-recv: 4) on 10.27.1.28:6379/Interactive, Idle/Faulted, last: INFO, origin: ReadFromPipe, outstanding: 2, last-read: 11s ago, last-write: 0s ago, keep-alive: 7s, state: ConnectedEstablished, mgr: 9 of 10 available, in: 0, in-pipe: 0, out-pipe: 120, last-heartbeat: 0s ago, last-mbeat: 0s ago, global: 0s ago, v: 2.1.30.38891
+ ---> Pipelines.Sockets.Unofficial.ConnectionResetException: 远程主机强迫关闭了一个现有的连接。
+ ---> System.Net.Sockets.SocketException (10054): 远程主机强迫关闭了一个现有的连接。
+   at Pipelines.Sockets.Unofficial.Internal.Throw.Socket(Int32 errorCode) in C:\Code\Pipelines.Sockets.Unofficial\src\Pipelines.Sockets.Unofficial\Internal\Throw.cs:line 59
+   at Pipelines.Sockets.Unofficial.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|10_0(SocketError e) in C:\Code\Pipelines.Sockets.Unofficial\src\Pipelines.Sockets.Unofficial\SocketAwaitableEventArgs.cs:line 87
+   at Pipelines.Sockets.Unofficial.SocketAwaitableEventArgs.GetResult() in C:\Code\Pipelines.Sockets.Unofficial\src\Pipelines.Sockets.Unofficial\SocketAwaitableEventArgs.cs:line 82
+   at Pipelines.Sockets.Unofficial.SocketConnection.DoReceiveAsync() in C:\Code\Pipelines.Sockets.Unofficial\src\Pipelines.Sockets.Unofficial\SocketConnection.Receive.cs:line 64
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at StackExchange.Redis.PhysicalConnection.ReadFromPipe()
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2624
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in /_/src/StackExchange.Redis/RedisBase.cs:line 54
+   at StackExchange.Redis.RedisDatabase.KeyExists(RedisKey key, CommandFlags flags) in /_/src/StackExchange.Redis/RedisDatabase.cs:line 668
+   at Senparc.CO2NET.Cache.Redis.RedisObjectCacheStrategy.CheckExisted(String key, Boolean isFullKey)
+   at Senparc.Weixin.Containers.BaseContainer`1.TryGetItem(String shortKey)
+   at Senparc.Weixin.WxOpen.Containers.SessionContainer.GetSession(String key)
+   at WX_Site.Controllers.WxOpen.BSiteController.GetQuestionMenuList(String sessionId) in C:\Users\FS\source\2BSite\2BSite\WX_Site\Controllers\WxOpen\BSiteController.cs:line 65
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCQ:00000002             
+时间： 2021-06-16 13:58:39.4458         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/BSite/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCQ:00000002             
+时间： 2021-06-16 13:58:39.4933         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCQ:00000002             
+时间： 2021-06-16 13:58:39.5212         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCS:00000007             
+时间： 2021-06-16 14:11:49.7449         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9GHEQ8NDCS:00000007 异常信息:StackExchange.Redis.RedisConnectionException: An unknown error occurred when writing the message
+   at StackExchange.Redis.ConnectionMultiplexer.ExecuteSyncImpl[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2624
+   at StackExchange.Redis.RedisBase.ExecuteSync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in /_/src/StackExchange.Redis/RedisBase.cs:line 54
+   at StackExchange.Redis.RedisDatabase.KeyExists(RedisKey key, CommandFlags flags) in /_/src/StackExchange.Redis/RedisDatabase.cs:line 668
+   at Senparc.CO2NET.Cache.Redis.RedisObjectCacheStrategy.CheckExisted(String key, Boolean isFullKey)
+   at Senparc.Weixin.Containers.BaseContainer`1.TryGetItem(String shortKey)
+   at Senparc.Weixin.WxOpen.Containers.SessionContainer.GetSession(String key)
+   at WX_Site.Controllers.WxOpen.BSiteController.SaveHistory(HistoryDTO historyDTO, String sessionId) in C:\Users\FS\source\2BSite\2BSite\WX_Site\Controllers\WxOpen\BSiteController.cs:line 121
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://10.27.9.154/BSite/SaveHistory         
+control: BSite         
+action: SaveHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCT:00000001             
+时间： 2021-06-16 14:11:49.7449         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9GHEQ8NDCT:00000001 异常信息:Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://10.27.9.154/BSite/SaveError         
+control: BSite         
+action: SaveError         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCS:00000007             
+时间： 2021-06-16 14:11:49.7855         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/BSite/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://10.27.9.154/BSite/SaveHistory         
+control: BSite         
+action: SaveHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCT:00000001             
+时间： 2021-06-16 14:11:49.8163         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/BSite/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://10.27.9.154/BSite/SaveError         
+control: BSite         
+action: SaveError         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCS:00000007             
+时间： 2021-06-16 14:11:49.8323         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://10.27.9.154/BSite/SaveHistory         
+control: BSite         
+action: SaveHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9GHEQ8NDCT:00000001             
+时间： 2021-06-16 14:11:49.8622         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://10.27.9.154/BSite/SaveError         
+control: BSite         
+action: SaveError         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 14:14:26.7202         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-16 14:16:33.8595         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================

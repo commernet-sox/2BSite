@@ -23,3 +23,5 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\WXSite.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\WXSite.Database.pdb

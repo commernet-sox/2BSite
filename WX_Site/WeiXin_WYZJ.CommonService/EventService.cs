@@ -20,7 +20,6 @@ using Senparc.Weixin.MP.Helpers;
 using Senparc.NeuChar.Entities;
 using Senparc.NeuChar.Helpers;
 using Senparc.CO2NET.Utilities;
-using Microsoft.AspNetCore.Http;
 using WX_CommonService.TemplateMessage;
 using WX_CommonService.Utilities;
 using Senparc.Weixin.MP;

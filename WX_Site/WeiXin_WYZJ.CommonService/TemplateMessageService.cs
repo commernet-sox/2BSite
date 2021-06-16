@@ -52,12 +52,13 @@ namespace WX_CommonService
 
             var data = new WxOpenTemplateMessage_PaySuccessNotice(title, SystemTime.Now, productName, orderNumber, price,
                             "400-031-8816", "https://sdk.senparc.weixin.com");
+            var data1 = new Senparc.Weixin.Entities.TemplateMessage.TemplateMessageData();
+            //Senparc.Weixin.WxOpen.AdvancedAPIs
+            //    .Template.TemplateApi
+            //    .SendTemplateMessage(
+            //        wxOpenAppId, openId, data.TemplateId, data, formId, "pages/index/index", "图书", "#fff00");
 
-            Senparc.Weixin.WxOpen.AdvancedAPIs
-                .Template.TemplateApi
-                .SendTemplateMessage(
-                    wxOpenAppId, openId, data.TemplateId, data, formId, "pages/index/index", "图书", "#fff00");
-
+            Senparc.Weixin.WxOpen.AdvancedAPIs.MessageApi.SendSubscribe(wxOpenAppId, openId, data.TemplateId, data1, formId, "pages/index/index", "图书", 10000);
             return sessionBag;
 
         }

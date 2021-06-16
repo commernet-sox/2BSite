@@ -25,6 +25,7 @@
     <ProjectReference Include="..\Extension\Npoi.Mapper\Npoi.Mapper.csproj" />
     <ProjectReference Include="..\Extension\Npoi.Report\Npoi.Report.csproj" />
     <ProjectReference Include="..\Identity.Database\Identity.Database.csproj" />
+    <ProjectReference Include="..\WXSite.Database\WXSite.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>

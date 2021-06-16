@@ -1,0 +1,388 @@
+ 
+跟踪标识：              
+时间： 2021-06-10 09:03:52.7894         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 10:51:22.0415         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9K:00000001             
+时间： 2021-06-10 10:51:29.3454         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/css/CustomLauout.css         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000001             
+时间： 2021-06-10 10:51:29.4551         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/js/globalSettings.min.js         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000002             
+时间： 2021-06-10 10:51:30.3490         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/js/globalSettings.min.js         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000003             
+时间： 2021-06-10 10:51:30.5975         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/Infra/getDepartmentDatas         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000004             
+时间： 2021-06-10 10:51:30.8730         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/Infra/ReportCount         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000005             
+时间： 2021-06-10 10:51:30.9295         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/Infra/GetEmployeeEntDisData         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9K:00000002             
+时间： 2021-06-10 10:51:30.9883         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/Infra/AttendanceCount         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000006             
+时间： 2021-06-10 10:51:31.0169         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/Infra/UpdateCount         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000007             
+时间： 2021-06-10 10:51:44.1592         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000008             
+时间： 2021-06-10 10:51:44.3917         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/favicon.ico         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNAIPDS9L:00000009             
+时间： 2021-06-10 10:51:52.7831         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorUnprotectingSessionCookie         
+等级： Warn         
+信息： Error unprotecting the session cookie.         
+堆栈：  <Invoke>d__9.MoveNext => CookieProtection.Unprotect => LoggingExtensions.ErrorUnprotectingSessionCookie         
+url: http://localhost/bsite/GetQuestionMenuList         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:05:29.0063         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:18:12.6627         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:21:07.2708         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:24:54.0228         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:26:00.3198         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNTTFQ3M1:00000002             
+时间： 2021-06-10 11:26:08.3476         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://localhost/swagger/v1/swagger.json         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:27:57.9157         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BNV09KTGK:00000002             
+时间： 2021-06-10 11:28:04.8407         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://localhost/swagger/v1/swagger.json         
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 11:29:45.7740         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 13:03:20.7365         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 13:14:53.3687         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9BPQOCS9J1:00000003             
+时间： 2021-06-10 13:20:13.8979         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9BPQOCS9J1:00000003 异常信息:Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: StartArray. Path '', line 1, position 1.
+   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JObject.Parse(String json)
+   at WX_Site.Controllers.WxOpen.BSiteController.GetQuestionsByMenu(Int32 Id) in C:\Users\FS\source\2BSite\2BSite\WX_Site\Controllers\WxOpen\BSiteController.cs:line 84
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://localhost/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识： 0HM9BPQOCS9J1:00000003             
+时间： 2021-06-10 13:20:13.9581         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/BSite/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://localhost/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识： 0HM9BPQOCS9J1:00000003             
+时间： 2021-06-10 13:20:14.0011         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://localhost/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识： 0HM9BPQOCS9J1:00000003             
+时间： 2021-06-10 13:20:14.0666         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://localhost/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 13:23:33.2334         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 14:13:07.0725         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-10 16:31:02.3807         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================

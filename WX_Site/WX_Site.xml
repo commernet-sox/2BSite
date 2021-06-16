@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WX_Site</name>
+    </assembly>
+    <members>
+        <member name="T:WX_Site.Common.Common">
+            <summary>
+            公共方法
+            </summary>
+        </member>
+        <member name="M:WX_Site.Common.Common.getRandomList``1(System.Collections.Generic.List{``0},System.Int32)">
+            <summary>
+            获取list中随机的元素
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="paramList"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetQuestionMenuList(System.String)">
+            <summary>
+            获取套题列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetQuestionMenuById(System.Int32,System.String)">
+            <summary>
+            获取套题详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetQuestionsByMenu(System.Int32,System.String)">
+            <summary>
+            获取对应题库
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.SaveHistory(_2BSite.Service.DTO.WX.HistoryDTO)">
+            <summary>
+            保存答题历史记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetHistoryList(System.Int32,System.String)">
+            <summary>
+            获取个人答题历史记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetHistory(System.Int32,System.String)">
+            <summary>
+            获取历史记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.SaveError(_2BSite.Service.DTO.WX.ErrorDTO)">
+            <summary>
+            保存错题记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetErrorList(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取错题记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.SaveFeedBack(_2BSite.Service.DTO.WX.FeedBackDTO)">
+            <summary>
+            保存反馈意见
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetRank(System.Int32,System.String)">
+            <summary>
+            获取排名信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.SaveUserInfo(_2BSite.Service.DTO.WX.UserDTO)">
+            <summary>
+            保存用户基本信息
+            </summary>
+            <param name="userDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.SavePhoneNumber(System.String,System.String)">
+            <summary>
+            保存电话号码
+            </summary>
+            <param name="openId"></param>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WX_Site.Controllers.WxOpen.WxOpenController">
+            <summary>
+            微信小程序Controller
+            </summary>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.Get(Senparc.Weixin.WxOpen.Entities.Request.PostModel,System.String)">
+            <summary>
+            GET请求用于处理微信小程序后台的URL验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.Post(Senparc.Weixin.WxOpen.Entities.Request.PostModel)">
+            <summary>
+            用户发送消息后，微信平台自动Post一个请求到这里，并等待响应XML。
+            </summary>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.OnLogin(System.String)">
+            <summary>
+            wx.login登陆成功之后发送的请求
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.DecryptPhoneNumber(System.String,System.String,System.String)">
+            <summary>
+            解密电话号码
+            </summary>
+            <param name="sessionId"></param>
+            <param name="encryptedData"></param>
+            <param name="iv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.DecryptRunData(System.String,System.String,System.String)">
+            <summary>
+            解密运动步数
+            </summary>
+            <param name="sessionId"></param>
+            <param name="encryptedData"></param>
+            <param name="iv"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Controllers.WxOpen.WxOpenController.GetPrepayid(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="body"></param>
+            <param name="price">价格 单位分</param>
+            <returns></returns>
+        </member>
+        <member name="T:WX_Site.Filters.CustomExceptionFilterAttribute">
+            <summary>
+            自定义异常类过滤器
+            </summary>
+        </member>
+        <member name="M:WX_Site.Startup.ConfigTraceLog">
+            <summary>
+            配置微信跟踪日志
+            </summary>
+        </member>
+    </members>
+</doc>

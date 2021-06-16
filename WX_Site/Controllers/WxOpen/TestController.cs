@@ -4,6 +4,7 @@ using Core.Infrastructure;
 using Core.Redis;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Senparc.Weixin.WxOpen.Containers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,13 +34,14 @@ namespace WX_Site.Controllers.WxOpen
                 }
             }
         }
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult GetCodeMaster(string sessionId)
         {
-            return View();
-        }
-
-        public IActionResult GetCodeMaster()
-        {
+            var sessionBag = SessionContainer.GetSession(sessionId);
+            if (sessionBag == null)
+            {
+                return Json(new _2BSite.Service.Model.ReturnResultModel() { Success = false, Message = "用户未正确登录!" });
+            }
             var codeMasterService = _serviceProvider.GetService(typeof(ICodeMasterService)) as ICodeMasterService;
             var codeMasters = codeMasterService.GetAll().ToList();
             return Json(codeMasters);

@@ -1,0 +1,856 @@
+ 
+跟踪标识：              
+时间： 2021-06-15 09:34:26.4888         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 11:00:43.2378         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 11:08:53.7122         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 11:20:04.7878         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 13:00:18.9884         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 13:10:22.0434         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 13:18:42.2403         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 14:07:42.2942         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 14:16:50.0516         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 14:39:09.8873         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9FP158LNLT:0000002A             
+时间： 2021-06-15 15:00:01.3092         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9FP158LNLT:0000002A 异常信息:Autofac.Core.DependencyResolutionException: An exception was thrown while activating _2BSite.Service.UnitOfWork.DemoDatabseUnitofwork.
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Microsoft.Extensions.Logging.ILoggerFactory, _2BSite.Service.UnitOfWork.IVPD`1[_2BSite.Database.BSiteContext])' on type 'DemoDatabseUnitofwork'.
+ ---> System.Exception: 检查配置文件中DBServerConfiguration是否配有contextType:_2BSite.Database.BSiteContext的连接
+   at Core.Infrastructure.DBRW.DBRWManager.GetMaster(String contextType)
+   at _2BSite.Service.UnitOfWork.DemoDatabseUnitofwork..ctor(ILoggerFactory logger, IVPD`1 virtualPrivateDatabase) in C:\Users\FS\source\2BSite\2BSite\2BSite.Service\UnitOfWork\DemoDatabseUnitofwork.cs:line 17
+   at lambda_method(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.ConstructorParameterBinding.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.Activate(IEnumerable`1 parameters, Object& decoratorTarget)
+   at Autofac.Core.Lifetime.LifetimeScope.GetOrCreateAndShare(Guid id, Func`1 creator)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(IComponentRegistration registration, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveOptionalService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://10.27.9.154/Test/GetCodeMaster         
+control: Test         
+action: GetCodeMaster         
+
+=======================================
+ 
+跟踪标识： 0HM9FP158LNLT:0000002A             
+时间： 2021-06-15 15:00:01.3598         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/Test/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://10.27.9.154/Test/GetCodeMaster         
+control: Test         
+action: GetCodeMaster         
+
+=======================================
+ 
+跟踪标识： 0HM9FP158LNLT:0000002A             
+时间： 2021-06-15 15:00:01.4027         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://10.27.9.154/Test/GetCodeMaster         
+control: Test         
+action: GetCodeMaster         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 15:23:26.1615         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OA:00000009             
+时间： 2021-06-15 15:28:37.1064         
+来源： WX_Site.Filters.CustomExceptionFilterAttribute.OnException         
+等级： Error         
+信息： 访问ID:0HM9FPPT082OA:00000009 异常信息:System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.IO.StringReader..ctor(String s)
+   at Newtonsoft.Json.Linq.JArray.Parse(String json, JsonLoadSettings settings)
+   at Newtonsoft.Json.Linq.JArray.Parse(String json)
+   at WX_Site.Controllers.WxOpen.BSiteController.GetHistory(Int32 Id) in C:\Users\FS\source\2BSite\2BSite\WX_Site\Controllers\WxOpen\BSiteController.cs:line 147
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)         
+堆栈：  ResourceInvoker.Next => ExceptionFilterAttribute.OnExceptionAsync => CustomExceptionFilterAttribute.OnException         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OA:00000009             
+时间： 2021-06-15 15:28:37.2886         
+来源： Microsoft.AspNetCore.Mvc.ViewFeatures.MvcViewFeaturesLoggerExtensions.ViewNotFound         
+等级： Error         
+信息： The view 'Error' was not found. Searched locations: /Views/BSite/Error.cshtml, /Views/Shared/Error.cshtml         
+堆栈：  <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView => MvcViewFeaturesLoggerExtensions.ViewNotFound         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OA:00000009             
+时间： 2021-06-15 15:28:37.3442         
+来源： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException         
+等级： Error         
+信息： An unhandled exception has occurred while executing the request.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OA:00000009             
+时间： 2021-06-15 15:28:37.4008         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OB:00000001             
+时间： 2021-06-15 15:28:44.7709         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OB:00000002             
+时间： 2021-06-15 15:28:47.9189         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OB:00000003             
+时间： 2021-06-15 15:28:51.9901         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OB:00000004             
+时间： 2021-06-15 15:31:24.3509         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OB:00000005             
+时间： 2021-06-15 15:31:26.1199         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000001             
+时间： 2021-06-15 15:36:27.3802         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000002             
+时间： 2021-06-15 15:36:29.5713         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000003             
+时间： 2021-06-15 15:37:18.4447         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000004             
+时间： 2021-06-15 15:37:20.1820         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000005             
+时间： 2021-06-15 15:38:58.1365         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000006             
+时间： 2021-06-15 15:39:00.0707         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000007             
+时间： 2021-06-15 15:40:04.5959         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000008             
+时间： 2021-06-15 15:40:06.8399         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:00000009             
+时间： 2021-06-15 15:40:53.8575         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OC:0000000A             
+时间： 2021-06-15 15:40:56.0970         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OD:00000001             
+时间： 2021-06-15 15:49:01.1681         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OD:00000002             
+时间： 2021-06-15 15:49:03.6347         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OE:00000001             
+时间： 2021-06-15 15:55:12.4219         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OE:00000002             
+时间： 2021-06-15 15:55:14.2164         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OF:00000001             
+时间： 2021-06-15 15:58:17.3011         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OF:00000002             
+时间： 2021-06-15 15:58:23.9333         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuById         
+control: BSite         
+action: GetQuestionMenuById         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OF:00000003             
+时间： 2021-06-15 15:58:34.2906         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OG:00000001             
+时间： 2021-06-15 16:00:43.1617         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OG:00000002             
+时间： 2021-06-15 16:01:03.1092         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionMenuById         
+control: BSite         
+action: GetQuestionMenuById         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OG:00000003             
+时间： 2021-06-15 16:01:05.6961         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetQuestionsByMenu         
+control: BSite         
+action: GetQuestionsByMenu         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OI:00000001             
+时间： 2021-06-15 16:02:10.7269         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/SaveError         
+control: BSite         
+action: SaveError         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OH:00000001             
+时间： 2021-06-15 16:02:10.7628         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/SaveHistory         
+control: BSite         
+action: SaveHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OH:00000002             
+时间： 2021-06-15 16:02:11.8094         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OH:00000003             
+时间： 2021-06-15 16:02:27.0653         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OJ:00000001             
+时间： 2021-06-15 16:03:29.5475         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OJ:00000002             
+时间： 2021-06-15 16:03:30.0479         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  ExecutionContext.RunInternal => AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OK:00000001             
+时间： 2021-06-15 16:04:53.7664         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OL:00000001             
+时间： 2021-06-15 16:05:19.7096         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OL:00000002             
+时间： 2021-06-15 16:05:21.7252         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/WxOpen/onLogin         
+control: WxOpen         
+action: OnLogin         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OL:00000003             
+时间： 2021-06-15 16:05:22.6365         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetHistoryList         
+control: BSite         
+action: GetHistoryList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OL:00000004             
+时间： 2021-06-15 16:05:25.6695         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  ExecutionContext.RunInternal => AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OL:00000005             
+时间： 2021-06-15 16:05:27.7493         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  ExecutionContext.RunInternal => AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetHistory         
+control: BSite         
+action: GetHistory         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OM:00000001             
+时间： 2021-06-15 16:06:20.6583         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetHistoryList         
+control: BSite         
+action: GetHistoryList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OM:00000002             
+时间： 2021-06-15 16:06:36.3082         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OM:00000003             
+时间： 2021-06-15 16:06:40.4551         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetRank         
+control: BSite         
+action: GetRank         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082OM:00000004             
+时间： 2021-06-15 16:06:41.1685         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetRank         
+control: BSite         
+action: GetRank         
+
+=======================================
+ 
+跟踪标识： 0HM9FPPT082ON:00000001             
+时间： 2021-06-15 16:07:12.7859         
+来源： Microsoft.AspNetCore.Session.SessionMiddleware+<Invoke>d__9.MoveNext         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  SessionMiddleware.Invoke => AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext         
+url: http://10.27.9.154/BSite/GetQuestionMenuList         
+control: BSite         
+action: GetQuestionMenuList         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 16:36:35.0909         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================
+ 
+跟踪标识： 0HM9FR2OV67EB:00000003             
+时间： 2021-06-15 17:08:17.4861         
+来源： Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log         
+等级： Error         
+信息： Failed executing DbCommand (263ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = -1), @p2='?' (DbType = DateTime2), @p3='?' (Size = 150), @p4='?' (Size = 20), @p5='?' (Size = 20), @p6='?' (Size = 150), @p7='?' (DbType = DateTime2), @p8='?' (Size = 20), @p9='?' (Size = 20), @p10='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([AuthData], [AvatarUrl], [CreateTime], [Creator], [Email], [MobilePhoneNumber], [Modifier], [ModifyTime], [NickName], [Password], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+SELECT [Id]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();         
+堆栈：  RelationalLoggerExtensions.CommandError => RelationalLoggerExtensions.LogCommandError => EventDefinition`6.Log         
+url: http://10.27.9.154/BSite/SaveUserInfo         
+control: BSite         
+action: SaveUserInfo         
+
+=======================================
+ 
+跟踪标识： 0HM9FR2OV67EB:00000003             
+时间： 2021-06-15 17:08:17.5809         
+来源： Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`3.Log         
+等级： Error         
+信息： An exception occurred in the database while saving changes for context type 'WXSite.Database.WXContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): 将截断字符串或二进制数据。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:6f92b120-bb4e-49b1-b0de-4c5258f0f297
+Error Number:8152,State:10,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)         
+堆栈：  DbContext.SaveChanges => CoreLoggerExtensions.SaveChangesFailed => EventDefinition`3.Log         
+url: http://10.27.9.154/BSite/SaveUserInfo         
+control: BSite         
+action: SaveUserInfo         
+
+=======================================
+ 
+跟踪标识： 0HM9FR2OV67EB:00000003             
+时间： 2021-06-15 17:09:07.8661         
+来源： Microsoft.Extensions.Logging.LoggingExtensions.ErrorClosingTheSession         
+等级： Error         
+信息： Error closing the session.         
+堆栈：  AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => LoggingExtensions.ErrorClosingTheSession         
+url: http://10.27.9.154/BSite/SaveUserInfo         
+control: BSite         
+action: SaveUserInfo         
+
+=======================================
+ 
+跟踪标识：              
+时间： 2021-06-15 17:15:06.1853         
+来源： WX_Site.Program.Main         
+等级： Debug         
+信息： 启动Main         
+堆栈：  Program.Main         
+url:          
+control:          
+action:          
+
+=======================================

@@ -13,6 +13,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
+using Senparc.NeuChar;
 using Senparc.NeuChar.Context;
 using Senparc.NeuChar.Entities;
 
@@ -23,6 +25,16 @@ namespace WX_CommonService.CustomMessageHandler
         public CustomMessageContext()
         {
             base.MessageContextRemoved += CustomMessageContext_MessageContextRemoved;
+        }
+
+        public override IRequestMessageBase GetRequestEntityMappingResult(RequestMsgType requestMsgType, XDocument doc)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override IResponseMessageBase GetResponseEntityMappingResult(ResponseMsgType responseMsgType, XDocument doc)
+        {
+            throw new NotImplementedException();
         }
 
 

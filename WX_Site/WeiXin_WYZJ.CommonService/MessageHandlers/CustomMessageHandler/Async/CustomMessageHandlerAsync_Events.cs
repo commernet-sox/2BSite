@@ -28,7 +28,6 @@ using Senparc.NeuChar.Entities;
 #if NET45
 using System.Web;
 #else
-using Microsoft.AspNetCore.Http;
 #endif
 
 

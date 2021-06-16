@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2BSite.Service", "2BSite.Se
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WX_CommonService", "WX_Site\WeiXin_WYZJ.CommonService\WX_CommonService.csproj", "{BD956345-3DF1-4438-A18D-F1A146E9487E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WXSite.Database", "WXSite.Database\WXSite.Database.csproj", "{C9AC84E3-8B68-44F6-803A-2761FCE2BB57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{BD956345-3DF1-4438-A18D-F1A146E9487E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD956345-3DF1-4438-A18D-F1A146E9487E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD956345-3DF1-4438-A18D-F1A146E9487E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AC84E3-8B68-44F6-803A-2761FCE2BB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AC84E3-8B68-44F6-803A-2761FCE2BB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AC84E3-8B68-44F6-803A-2761FCE2BB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AC84E3-8B68-44F6-803A-2761FCE2BB57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{921D6193-8D7C-4C92-9E0C-069008C76C43} = {BC10CBA4-1043-44CC-8697-1718C1897C38}
 		{67F196E1-1C71-43E6-A15B-66621D7FEB61} = {55FA8B62-BB0F-40C5-86D4-48E36362F6C5}
 		{BD956345-3DF1-4438-A18D-F1A146E9487E} = {35D4D974-900C-4433-A815-0520F2405D1C}
+		{C9AC84E3-8B68-44F6-803A-2761FCE2BB57} = {1AF32731-D29C-4FAE-AD1D-C2BDF416C67D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E9C7010-0BA5-4325-8EDB-53C6F50A3E30}

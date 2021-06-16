@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Senparc\Senparc.Weixin.Cache\Senparc.Weixin.Cache.Redis\Senparc.Weixin.Cache.Redis.vs2017.csproj" />
-    <ProjectReference Include="..\Senparc\Senparc.Weixin.MP\Senparc.Weixin.MP\Senparc.Weixin.MP.vs2017.csproj" />
-    <ProjectReference Include="..\Senparc\Senparc.Weixin.TenPay\Senparc.Weixin.TenPay.vs2017.csproj" />
-    <ProjectReference Include="..\Senparc\Senparc.Weixin.WxOpen\Senparc.Weixin.WxOpen.vs2017.csproj" />
+    <PackageReference Include="Senparc.Weixin.Cache.Redis" Version="2.9.400" />
+    <PackageReference Include="Senparc.Weixin.MP" Version="16.11.400" />
+    <PackageReference Include="Senparc.Weixin.TenPay" Version="1.6.400" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.10.401" />
   </ItemGroup>
 
 </Project>

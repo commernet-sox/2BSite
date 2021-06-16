@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
@@ -53,6 +54,17 @@ namespace WX_Site
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+            //注册Swagger生成器，定义一个和多个Swagger 文档
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "WX API", Version = "v1" });
+                // 为 Swagger JSON and UI设置xml文档注释路径
+                var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);//获取应用程序所在目录（绝对，不受工作目录影响，建议采用此方法获取路径）
+                var xmlPath = Path.Combine(basePath, "WX_Site.xml");
+                c.IncludeXmlComments(xmlPath);
+            });
+
             var redisConfiguration = Configuration.GetSection("redisConfiguration").Get<RedisConfiguration>();
 
             services.AddSingleton(redisConfiguration);
@@ -181,6 +193,14 @@ namespace WX_Site
             app.UseRouting();
             //app.UseCookiePolicy();
 
+            //启用中间件服务生成Swagger作为JSON终结点
+            app.UseSwagger();
+            //启用中间件服务对swagger-ui，指定Swagger JSON终结点
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "WX API V1");
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -190,7 +210,7 @@ namespace WX_Site
 
 
             // 启动 CO2NET 全局注册，必须！
-            IRegisterService register = RegisterService.Start(env, senparcSetting.Value)
+            IRegisterService register = RegisterService.Start(senparcSetting.Value)
                                                         //关于 UseSenparcGlobal() 的更多用法见 CO2NET Demo：https://github.com/Senparc/Senparc.CO2NET/blob/master/Sample/Senparc.CO2NET.Sample.netcore/Startup.cs
                                                         .UseSenparcGlobal();
 

@@ -93,7 +93,7 @@ namespace WX_Site.Controllers.WxOpen
             }
 
             //自定义MessageHandler，对微信请求的详细判断操作都在这里面。
-            var messageHandler = new CustomWxOpenMessageHandler(Request.GetRequestMemoryStream(), postModel, maxRecordCount);
+            var messageHandler = new CustomWxOpenMessageHandler(Request.Body, postModel, maxRecordCount);
 
 
             try
@@ -166,17 +166,18 @@ namespace WX_Site.Controllers.WxOpen
                 var jsonResult = SnsApi.JsCode2Json(WxOpenAppId, WxOpenAppSecret, code);
                 if (jsonResult.errcode == ReturnCode.请求成功)
                 {
+                    //返回的openid是用户唯一标识，可用作用户表主键
                     var unionId = "";
                     List<string> employeeIds = new List<string>();
                     var sessionBag = SessionContainer.UpdateSession(jsonResult.openid, jsonResult.openid, jsonResult.session_key, unionId);
 
                     if (!string.IsNullOrWhiteSpace(jsonResult.openid))
                     {
-                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds });
+                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId });
                     }
                     else
                     {
-                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds });
+                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId });
                     }
                     //var employeeService = _serviceProvider.GetService(typeof(IEmployeeService)) as IEmployeeService;
 
@@ -302,6 +303,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="encryptedData"></param>
         /// <param name="iv"></param>
         /// <returns></returns>
+        [HttpPost]
         public ActionResult DecryptPhoneNumber(string sessionId, string encryptedData, string iv)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);
@@ -330,6 +332,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="encryptedData"></param>
         /// <param name="iv"></param>
         /// <returns></returns>
+        [HttpPost]
         public ActionResult DecryptRunData(string sessionId, string encryptedData, string iv)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);
@@ -359,6 +362,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="body"></param>
         /// <param name="price">价格 单位分</param>
         /// <returns></returns>
+        [HttpPost]
         public ActionResult GetPrepayid(string sessionId, string content, int price = 1)
         {
             try

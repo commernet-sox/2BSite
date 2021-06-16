@@ -37,7 +37,6 @@ using Senparc.NeuChar.Entities;
 using Senparc.NeuChar.Agents;
 using Senparc.CO2NET.Utilities;
 using Senparc.CO2NET.Extensions;
-using Microsoft.AspNetCore.Http;
 using WX_CommonService.Utilities;
 using Senparc.Weixin;
 using WX_CommonService;
@@ -98,23 +97,37 @@ namespace WX_CommonService.CustomMessageHandler
         //    : base(requestMessage, postModel)
         //{
         //}
-
-        public override void OnExecuting()
+        public override Task OnExecutingAsync(CancellationToken cancellationToken)
         {
             //测试MessageContext.StorageData
             if (CurrentMessageContext.StorageData == null)
             {
                 CurrentMessageContext.StorageData = 0;
             }
-            base.OnExecuting();
+            return base.OnExecutingAsync(cancellationToken);
         }
+        //public override void OnExecuting()
+        //{
+        //    //测试MessageContext.StorageData
+        //    if (CurrentMessageContext.StorageData == null)
+        //    {
+        //        CurrentMessageContext.StorageData = 0;
+        //    }
+        //    base.OnExecuting();
+        //}
 
-        public override void OnExecuted()
+        //public override void OnExecuted()
+        //{
+        //    base.OnExecuted();
+        //    CurrentMessageContext.StorageData = ((int)CurrentMessageContext.StorageData) + 1;
+        //}
+
+        public override Task OnExecutedAsync(CancellationToken cancellationToken)
         {
-            base.OnExecuted();
             CurrentMessageContext.StorageData = ((int)CurrentMessageContext.StorageData) + 1;
+            return base.OnExecutedAsync(cancellationToken);
+            
         }
-
         /// <summary>
         /// 处理文字请求
         /// </summary>
