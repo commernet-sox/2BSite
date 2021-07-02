@@ -4,6 +4,14 @@
         <name>WX_Site</name>
     </assembly>
     <members>
+        <member name="M:WX_Site.Common.BitmapUtil.GetReducedImage(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary> 
+            生成缩略图重载方法1，返回缩略图的Image对象 
+            </summary> 
+            <param name="Width">缩略图的宽度</param> 
+            <param name="Height">缩略图的高度</param> 
+            <returns>缩略图的Image对象</returns> 
+        </member>
         <member name="T:WX_Site.Common.Common">
             <summary>
             公共方法
@@ -16,6 +24,37 @@
             <typeparam name="T"></typeparam>
             <param name="paramList"></param>
             <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Common.HttpRequest.SendRequest(System.String,System.Collections.Generic.Dictionary{System.String,System.String},WX_Site.Common.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32)">
+            <summary>
+            get/delete请求
+            </summary>
+            <param name="url"></param>
+            <param name="data"></param>
+            <param name="requestMethod"></param>
+            <param name="header"></param>
+            <param name="timeOut"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Common.HttpRequest.SendRequest(System.String,System.String,WX_Site.Common.HttpMethod,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32)">
+            <summary>
+            post请求
+            </summary>
+            <param name="url"></param>
+            <param name="postData"></param>
+            <param name="requestMethod"></param>
+            <param name="header"></param>
+            <param name="timeOut"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WX_Site.Common.HttpRequest.HttpPostDic``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            POST请求
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="url">请求Url地址</param>
+            <param name="postParameters">post提交参数</param>
             <returns></returns>
         </member>
         <member name="M:WX_Site.Controllers.WxOpen.BSiteController.GetQuestionMenuList(System.String)">
@@ -93,6 +132,12 @@
             <param name="phone"></param>
             <returns></returns>
         </member>
+        <member name="M:WX_Site.Controllers.WxOpen.BSiteController.FaceTest">
+            <summary>
+            人脸检测
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:WX_Site.Controllers.WxOpen.WxOpenController">
             <summary>
             微信小程序Controller
@@ -146,6 +191,31 @@
         <member name="T:WX_Site.Filters.CustomExceptionFilterAttribute">
             <summary>
             自定义异常类过滤器
+            </summary>
+        </member>
+        <member name="P:WX_Site.Model.FaceModel.santingbi">
+            <summary>
+            三庭比
+            </summary>
+        </member>
+        <member name="P:WX_Site.Model.FaceModel.wuyanbi">
+            <summary>
+            五官比
+            </summary>
+        </member>
+        <member name="P:WX_Site.Model.FaceModel.lianxing">
+            <summary>
+            脸型
+            </summary>
+        </member>
+        <member name="P:WX_Site.Model.FaceModel.xiangmao">
+            <summary>
+            相貌
+            </summary>
+        </member>
+        <member name="P:WX_Site.Model.FaceModel.nianling">
+            <summary>
+            年龄
             </summary>
         </member>
         <member name="M:WX_Site.Startup.ConfigTraceLog">

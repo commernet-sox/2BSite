@@ -16,7 +16,6 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Ma
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Mapper.xml
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Npoi.Report.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\Identity.Database.pdb
-C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csprojAssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.AssemblyInfoInputs.cache
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.AssemblyInfo.cs
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csproj.CoreCompileInputs.cache
@@ -25,3 +24,4 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\WXSite.Database.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Service\bin\Debug\netstandard2.0\WXSite.Database.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite.Service\obj\Debug\netstandard2.0\2BSite.Service.csprojAssemblyReference.cache

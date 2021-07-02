@@ -15,22 +15,27 @@ using System.Linq;
 using Senparc.CO2NET.Utilities;
 using Senparc.Weixin;
 using Senparc.Weixin.MP;
-using WX_CommonService.WxOpenMessageHandler;
-using WX_CommonService;
 using Senparc.Weixin.TenPay.V3;
-
 using Core.Database.Repository;
 using System.Collections.Generic;
-
 using System.Data;
 using _2BSite.Service.Model;
+using _2BSite.Service.Interface.WX;
+using Core.Redis;
+using WXSite.Database;
+using Microsoft.EntityFrameworkCore;
+using Core.Infrastructure;
+using WX_CommonService.WxOpenMessageHandler;
+using WX_CommonService;
 
 namespace WX_Site.Controllers.WxOpen
 {
     /// <summary>
     /// 微信小程序Controller
     /// </summary>
-    public partial class WxOpenController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class WxOpenController : Controller
     {
         public static readonly string Token = Config.SenparcWeixinSetting.WxOpenToken;//与微信小程序后台的Token设置保持一致，区分大小写。
         public static readonly string EncodingAESKey = Config.SenparcWeixinSetting.WxOpenEncodingAESKey;//与微信小程序后台的EncodingAESKey设置保持一致，区分大小写。
@@ -40,20 +45,35 @@ namespace WX_Site.Controllers.WxOpen
 
         readonly Func<string> _getRandomFileName = () => SystemTime.Now.ToString("yyyyMMdd-HHmmss") + Guid.NewGuid().ToString("n").Substring(0, 6);
 
+        private Core.Redis.ICacheClient _cacheClient;
         private IServiceProvider _serviceProvider;
+        private IUnitOfWork<WXContext> _unitOfWork;
 
 
-        public WxOpenController(IServiceProvider serviceProvider)
+        public WxOpenController(IServiceProvider serviceProvider, ICacheClient cacheClient, IUnitOfWork<WXContext> unitOfWork)
         {
             _serviceProvider = serviceProvider;
+            _cacheClient = cacheClient;
+            _unitOfWork = unitOfWork;
+
+            //获取子连接
+            var connect = _unitOfWork.DbContext.Database.GetDbConnection();
+
+            if (Core.Infrastructure.Global.DBRWManager.IsMaterConnection(typeof(WXContext).ToString(), connect.ConnectionString))
+            {
+                if (connect.State == System.Data.ConnectionState.Closed)
+                {
+                    _unitOfWork.DbContext.Database.GetDbConnection().ConnectionString = Global.DBRWManager.GetSlave(typeof(WXContext).ToString());
+                }
+            }
         }
 
         /// <summary>
         /// GET请求用于处理微信小程序后台的URL验证
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
-        [ActionName("Index")]
+        [HttpGet("Get")]
+        //[ActionName("Get")]
         public ActionResult Get(PostModel postModel, string echostr)
         {
             if (CheckSignature.Check(postModel.Signature, postModel.Timestamp, postModel.Nonce, Token))
@@ -70,8 +90,8 @@ namespace WX_Site.Controllers.WxOpen
         /// <summary>
         /// 用户发送消息后，微信平台自动Post一个请求到这里，并等待响应XML。
         /// </summary>
-        [HttpPost]
-        [ActionName("Index")]
+        [HttpPost("Post")]
+        //[ActionName("Post")]
         public ActionResult Post(PostModel postModel)
         {
             if (!CheckSignature.Check(postModel.Signature, postModel.Timestamp, postModel.Nonce, Token))
@@ -143,7 +163,7 @@ namespace WX_Site.Controllers.WxOpen
             }
         }
 
-        [HttpPost]
+        [HttpPost("RequestData")]
         public ActionResult RequestData(string nickName)
         {
             var data = new
@@ -158,8 +178,8 @@ namespace WX_Site.Controllers.WxOpen
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
-        [HttpPost]
-        public ActionResult OnLogin(string code)
+        [HttpPost("OnLogin")]
+        public ActionResult OnLogin([FromForm]string code)
         {
             try
             {
@@ -170,14 +190,15 @@ namespace WX_Site.Controllers.WxOpen
                     var unionId = "";
                     List<string> employeeIds = new List<string>();
                     var sessionBag = SessionContainer.UpdateSession(jsonResult.openid, jsonResult.openid, jsonResult.session_key, unionId);
-
-                    if (!string.IsNullOrWhiteSpace(jsonResult.openid))
+                    var userService = _serviceProvider.GetService(typeof(IUserService)) as IUserService;
+                    var userDto = userService.GetAll().Where(t => t.AuthData == jsonResult.openid).FirstOrDefault();
+                    if (!string.IsNullOrWhiteSpace(jsonResult.openid) && userDto!=null)
                     {
-                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId });
+                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId, UserId = userDto.Id, IsPhone = string.IsNullOrWhiteSpace(userDto.MobilePhoneNumber) ? false : true, NickName=userDto.NickName, AvatarUrl=userDto.AvatarUrl });
                     }
                     else
                     {
-                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId });
+                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId,UserId=0, IsPhone=false, NickName = "", AvatarUrl = "" });
                     }
                     //var employeeService = _serviceProvider.GetService(typeof(IEmployeeService)) as IEmployeeService;
 
@@ -225,7 +246,7 @@ namespace WX_Site.Controllers.WxOpen
 
         }
 
-        [HttpPost]
+        [HttpPost("CheckWxOpenSignature")]
         public ActionResult CheckWxOpenSignature(string sessionId, string rawData, string signature)
         {
             try
@@ -245,7 +266,7 @@ namespace WX_Site.Controllers.WxOpen
             }
         }
 
-        [HttpPost]
+        [HttpPost("DecodeEncryptedData")]
         public ActionResult DecodeEncryptedData(string type, string sessionId, string encryptedData, string iv)
         {
             DecodeEntityBase decodedEntity = null;
@@ -277,7 +298,7 @@ namespace WX_Site.Controllers.WxOpen
             });
         }
 
-        [HttpPost]
+        [HttpPost("TemplateTest")]
         public ActionResult TemplateTest(string sessionId, string formId)
         {
             var templateMessageService = new TemplateMessageService();
@@ -303,7 +324,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="encryptedData"></param>
         /// <param name="iv"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("DecryptPhoneNumber")]
         public ActionResult DecryptPhoneNumber(string sessionId, string encryptedData, string iv)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);
@@ -332,7 +353,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="encryptedData"></param>
         /// <param name="iv"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("DecryptRunData")]
         public ActionResult DecryptRunData(string sessionId, string encryptedData, string iv)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);
@@ -362,7 +383,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="body"></param>
         /// <param name="price">价格 单位分</param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("GetPrepayid")]
         public ActionResult GetPrepayid(string sessionId, string content, int price = 1)
         {
             try
@@ -424,7 +445,7 @@ namespace WX_Site.Controllers.WxOpen
 
         }
 
-        [HttpGet]
+        [HttpGet("CheckSession")]
         public ActionResult CheckSession(string sessionId)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);

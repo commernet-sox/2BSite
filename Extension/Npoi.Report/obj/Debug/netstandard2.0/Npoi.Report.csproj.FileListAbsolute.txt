@@ -15,4 +15,5 @@ C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csproj.CoreCompileInputs.cache
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.dll
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.pdb
-C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csproj.AssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.GeneratedMSBuildEditorConfig.editorconfig

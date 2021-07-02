@@ -490,3 +490,5 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Syst
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\SystemRole\UserIndex.cshtml.g.cs
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Denied.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\WXSite.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Debug\netcoreapp3.1\WXSite.Database.pdb

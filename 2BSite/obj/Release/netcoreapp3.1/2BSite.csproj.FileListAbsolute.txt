@@ -441,3 +441,5 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\Sy
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\PermissionIndex.cshtml.g.cs
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\RoleIndex.cshtml.g.cs
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\Razor\Views\SystemRole\UserIndex.cshtml.g.cs
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Release\netcoreapp3.1\WXSite.Database.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite\bin\Release\netcoreapp3.1\WXSite.Database.pdb

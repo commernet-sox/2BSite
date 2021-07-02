@@ -1,0 +1,9 @@
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Release\netstandard2.0\WX_CommonService.deps.json
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Release\netstandard2.0\WX_CommonService.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Release\netstandard2.0\WX_CommonService.pdb
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.AssemblyInfoInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.AssemblyInfo.cs
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.csproj.CoreCompileInputs.cache
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.dll
+C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Release\netstandard2.0\WX_CommonService.pdb

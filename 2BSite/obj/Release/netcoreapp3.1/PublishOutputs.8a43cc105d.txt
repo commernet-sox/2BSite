@@ -804,11 +804,13 @@ C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Cor
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Identity.Database.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Npoi.Mapper.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Npoi.Report.dll
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\WXSite.Database.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\2BSite.Service.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\2BSite.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Identity.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Npoi.Mapper.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\Npoi.Report.pdb
+C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\WXSite.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\2BSite.Views.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\2BSite.Views.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite\obj\Release\netcoreapp3.1\PubTmp\Out\2BSite.deps.json

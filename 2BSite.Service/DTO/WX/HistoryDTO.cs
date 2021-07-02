@@ -47,5 +47,7 @@ namespace _2BSite.Service.DTO.WX
         /// </summary>
         public int BeatNum { get; set; }
         public string sessionId { get; set; }
+        public string NickName { get; set; }
+        public string AvatarUrl { get; set; }
     }
 }

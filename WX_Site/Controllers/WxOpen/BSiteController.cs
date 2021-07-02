@@ -4,17 +4,27 @@ using _2BSite.Service.Model;
 using Core.Database.Repository;
 using Core.Infrastructure;
 using Core.Redis;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using RestSharp;
 using Senparc.Weixin.WxOpen.Containers;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using WX_Site.Common;
+using WX_Site.Model;
 using WXSite.Database;
 using WXSite.Database.Entities;
+using HttpRequest = WX_Site.Common.HttpRequest;
 
 namespace WX_Site.Controllers.WxOpen
 {
@@ -31,6 +41,8 @@ namespace WX_Site.Controllers.WxOpen
         private IErrorService _errorService;
         private IFeedBackService _feedBackService;
         private IUserService _userService;
+        private IConfiguration _configuration;
+        private IHostingEnvironment _hostingEnvironment;
 
         public BSiteController(ICacheClient cacheClient, IServiceProvider serviceProvider, IUnitOfWork<WXContext> unitOfWork)
         {
@@ -44,6 +56,8 @@ namespace WX_Site.Controllers.WxOpen
             _errorService = serviceProvider.GetService(typeof(IErrorService)) as IErrorService;
             _feedBackService = serviceProvider.GetService(typeof(IFeedBackService)) as IFeedBackService;
             _userService = serviceProvider.GetService(typeof(IUserService)) as IUserService;
+            _configuration = serviceProvider.GetService(typeof(IConfiguration)) as IConfiguration;
+            _hostingEnvironment = serviceProvider.GetService(typeof(IHostingEnvironment)) as IHostingEnvironment;
             //获取子连接
             var connect = _unitOfWork.DbContext.Database.GetDbConnection();
 
@@ -246,7 +260,12 @@ namespace WX_Site.Controllers.WxOpen
             {
                 return Json(new ReturnResultModel() { Success = false, Message = "用户未正确登录!" });
             }
-            var data = _historyService.GetAll().Where(t => t.MenuId == MenuId).OrderByDescending(t => t.Score).Select(t=>new { t.UserId,t.Score}).ToList();
+            var data = _historyService.GetAll().Where(t => t.MenuId == MenuId).OrderByDescending(t => t.Score).Select(t=>new HistoryDTO { UserId= t.UserId, Score=t.Score, AvatarUrl ="",NickName=""}).ToList();
+            var users = _userService.GetAll().Where(t => data.Select(o => o.UserId).Contains(t.Id)).ToList();
+            data.ForEach(t => {
+                t.NickName = users.Where(o => o.Id == t.UserId).Select(t => t.NickName).FirstOrDefault();
+                t.AvatarUrl = users.Where(o => o.Id == t.UserId).Select(t => t.AvatarUrl).FirstOrDefault();
+            });
             return Json(data);
         }
         /// <summary>
@@ -288,7 +307,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="openId"></param>
         /// <param name="phone"></param>
         /// <returns></returns>
-        [HttpPost("SavePhoneNumber")]
+        [HttpGet("SavePhoneNumber")]
         public IActionResult SavePhoneNumber(string openId,string phone)
         {
             var data = _userService.GetAll().Where(t => t.AuthData == openId).FirstOrDefault();
@@ -309,6 +328,92 @@ namespace WX_Site.Controllers.WxOpen
             {
                 return Json(new ReturnResultModel() { Success = false, Message = "用户不存在，请稍后再试！" });
             }
+        }
+        /// <summary>
+        /// 人脸检测
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost("FaceTest")]
+        [Microsoft.AspNetCore.Authorization.AllowAnonymous]
+        public IActionResult FaceTest()
+        {
+            var files = HttpContext.Request.Form.Files;
+            if (files.Count == 0)
+            {
+                return Json(new ReturnResultModel() { Success = false, Message = "无上传文件" });
+            }
+            List<string> _extns = new List<string>() { ".jpg", ".png", ".bmp", ".ico", ".heif", ".jpeg", ".heic"};
+            var extension = string.Empty;
+            FaceModel faceModel=null;
+            foreach (var upload in files)
+            {
+                extension = Path.GetExtension(upload.FileName).ToLower();
+                if (_extns.Select(x => x.ToLower()).ToList().Contains(extension) == false)
+                {
+                    return Json(new ReturnResultModel() { Success = false, Message = "上传文件类型不对" });
+                }
+                Stream streams = upload.OpenReadStream();
+                byte[] bytes = new byte[streams.Length];
+                streams.Read(bytes, 0, bytes.Length);
+
+                
+
+                MemoryStream ms = new MemoryStream(bytes);
+                Image img = null;
+                img = Image.FromStream(ms);
+                Random ran = new Random();
+                int random = ran.Next(10000, 99999);
+                var newFileName = DateTime.Now.ToString("yyyyMMddHHmmss") + random + extension;
+                var phyconfigPath = _configuration.GetValue<string>("UploadImagePath") + "\\WXSite";
+                var physicalPath = phyconfigPath + "\\" + newFileName;
+                if (!Directory.Exists(phyconfigPath)) //如果该文件夹不存在就建立这个新文件夹
+                {
+                    Directory.CreateDirectory(phyconfigPath);
+                }
+                img.Save(physicalPath, ImageFormat.Jpeg);
+                img.Dispose();
+                img = null;
+                ms.Dispose();
+                streams.Dispose();
+
+                #region 请求接口
+                var client = new RestClient("http://www.yanzhiceshi.com/index.php/Test/index.html");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.POST);
+                request.AddHeader("Cookie", "PHPSESSID=pk520iqo9bfhdufj52ems7fk4g");
+                request.AddFile("img", _hostingEnvironment.ContentRootPath + physicalPath.Substring(1));
+                //request.AddFile("img", "C:/Users/FS/source/2BSite/2BSite/WX_Site/wwwroot/upload/images/WXSite/2021061713143721202.jpg");
+                //request.AddFile("img", "C:/Users/FS/Pictures/Camera Roll/IMG_0802.JPG");
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine(response.Content);
+                faceModel = JsonConvert.DeserializeObject<FaceModel>(response.Content);
+                #endregion
+            }
+
+            return Json(new ReturnResultModel() { Success = true, Message = "成功",Data=faceModel });
+        }
+
+        [HttpPost("UploadFile")]
+        public string UploadFile()
+        {
+            if (Request.Form.Files.Count == 0)
+                return "未检测到文件";
+            string path = _hostingEnvironment.ContentRootPath + "\\wwwroot\\Files";
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+
+            var file = Request.Form.Files[0];
+            string fileExt = file.FileName.Split('.')[file.FileName.Split('.').Length - 1];
+            string filename = Guid.NewGuid().ToString() + "." + fileExt;
+            string fileFullName = path + "\\" + filename;
+            using (FileStream fs = System.IO.File.Create(fileFullName))
+            {
+                file.CopyTo(fs);
+                fs.Flush();
+            }
+
+            return "/Files/" + filename;
         }
     }
 }

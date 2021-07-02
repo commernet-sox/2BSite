@@ -31,7 +31,7 @@ namespace _2BSite.Service.UnitOfWork.VPD
             _biDatabaseUniofwork = biDatabaseUniofwork;
         }
 
-        public async void SetVPD(IdentityDataContext dbContext)
+        public void SetVPD(IdentityDataContext dbContext)
         {
             //string json = _contentAccessor.HttpContext.Session.GetString("User");
             //UserDTO usetdto = null;

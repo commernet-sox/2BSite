@@ -45,7 +45,7 @@ namespace WX_Site
             var builder = new ConfigurationBuilder()
                .SetBasePath(env.ContentRootPath)
                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-               .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+               //.AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: false, reloadOnChange: true)
                .AddEnvironmentVariables();
             Core.Infrastructure.Global.Configuration = this.Configuration = builder.Build();
         }
@@ -85,6 +85,10 @@ namespace WX_Site
                  options.Cookie.Name = appname;
              }
              );
+            // 配置跨域处理，允许所有来源
+            services.AddCors(options =>
+            options.AddPolicy("cors",
+            p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
             services.AddControllersWithViews(options =>
             {
@@ -182,12 +186,15 @@ namespace WX_Site
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+                
             }
             else
             {
                 app.UseExceptionHandler("/Error");
             }
+
+            // 允许所有跨域，cors是在ConfigureServices方法中配置的跨域策略名称
+            app.UseCors("cors");
             //InitializeDatabase();
             app.UseStaticFiles();
             app.UseRouting();
@@ -214,7 +221,7 @@ namespace WX_Site
                                                         //关于 UseSenparcGlobal() 的更多用法见 CO2NET Demo：https://github.com/Senparc/Senparc.CO2NET/blob/master/Sample/Senparc.CO2NET.Sample.netcore/Startup.cs
                                                         .UseSenparcGlobal();
 
-            register.ChangeDefaultCacheNamespace("FORCHN");
+            register.ChangeDefaultCacheNamespace("zjshow");
 
             var redisConfigurationStr = senparcSetting.Value.Cache_Redis_Configuration;
             var useRedis = !string.IsNullOrEmpty(redisConfigurationStr) && redisConfigurationStr != "#{Cache_Redis_Configuration}#"/*默认值，不启用*/;
