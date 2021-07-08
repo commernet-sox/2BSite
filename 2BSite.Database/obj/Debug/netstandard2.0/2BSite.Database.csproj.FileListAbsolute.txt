@@ -9,4 +9,5 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.dll
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.pdb
-C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.AssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.GeneratedMSBuildEditorConfig.editorconfig

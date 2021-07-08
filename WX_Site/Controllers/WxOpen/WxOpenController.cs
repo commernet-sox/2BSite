@@ -194,11 +194,11 @@ namespace WX_Site.Controllers.WxOpen
                     var userDto = userService.GetAll().Where(t => t.AuthData == jsonResult.openid).FirstOrDefault();
                     if (!string.IsNullOrWhiteSpace(jsonResult.openid) && userDto!=null)
                     {
-                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId, UserId = userDto.Id, IsPhone = string.IsNullOrWhiteSpace(userDto.MobilePhoneNumber) ? false : true, NickName=userDto.NickName, AvatarUrl=userDto.AvatarUrl });
+                        return Json(new { success = true, msg = "OK", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId, UserId = userDto.Id, IsPhone = string.IsNullOrWhiteSpace(userDto.MobilePhoneNumber) ? true : true, NickName=userDto.NickName, AvatarUrl=userDto.AvatarUrl });
                     }
                     else
                     {
-                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId,UserId=0, IsPhone=false, NickName = "", AvatarUrl = "" });
+                        return Json(new { success = true, msg = "false", sessionId = sessionBag.Key, sessionKey = sessionBag.SessionKey, sessionBag.ExpireTime, operation = "check", data = employeeIds, openId = sessionBag.OpenId,UserId=0, IsPhone=true, NickName = "", AvatarUrl = "" });
                     }
                     //var employeeService = _serviceProvider.GetService(typeof(IEmployeeService)) as IEmployeeService;
 
@@ -325,7 +325,7 @@ namespace WX_Site.Controllers.WxOpen
         /// <param name="iv"></param>
         /// <returns></returns>
         [HttpPost("DecryptPhoneNumber")]
-        public ActionResult DecryptPhoneNumber(string sessionId, string encryptedData, string iv)
+        public ActionResult DecryptPhoneNumber([FromForm] string sessionId, [FromForm] string encryptedData, [FromForm] string iv)
         {
             var sessionBag = SessionContainer.GetSession(sessionId);
             if (sessionBag == null)

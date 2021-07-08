@@ -9,4 +9,5 @@ C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.CopyComplete
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.dll
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.pdb
-C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csprojAssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.AssemblyReference.cache
+C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.GeneratedMSBuildEditorConfig.editorconfig
