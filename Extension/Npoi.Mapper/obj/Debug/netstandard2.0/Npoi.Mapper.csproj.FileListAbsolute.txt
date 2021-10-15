@@ -19,3 +19,12 @@ C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.pdb
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.csproj.AssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\bin\Debug\netstandard2.0\Npoi.Mapper.xml
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\bin\Debug\netstandard2.0\Npoi.Mapper.deps.json
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\bin\Debug\netstandard2.0\Npoi.Mapper.dll
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\bin\Debug\netstandard2.0\Npoi.Mapper.pdb
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.AssemblyInfoInputs.cache
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.AssemblyInfo.cs
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.csproj.CoreCompileInputs.cache
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.dll
+D:\MyCodes\2BSite\Extension\Npoi.Mapper\obj\Debug\netstandard2.0\Npoi.Mapper.pdb

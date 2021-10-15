@@ -11,3 +11,15 @@ C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.AssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodes\2BSite\WXSite.Database\bin\Debug\netstandard2.0\WXSite.Database.deps.json
+D:\MyCodes\2BSite\WXSite.Database\bin\Debug\netstandard2.0\WXSite.Database.dll
+D:\MyCodes\2BSite\WXSite.Database\bin\Debug\netstandard2.0\WXSite.Database.pdb
+D:\MyCodes\2BSite\WXSite.Database\bin\Debug\netstandard2.0\Core.Database.Extension.dll
+D:\MyCodes\2BSite\WXSite.Database\bin\Debug\netstandard2.0\Core.Infrastructure.dll
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.AssemblyReference.cache
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.AssemblyInfoInputs.cache
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.AssemblyInfo.cs
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.CoreCompileInputs.cache
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.csproj.CopyComplete
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.dll
+D:\MyCodes\2BSite\WXSite.Database\obj\Debug\netstandard2.0\WXSite.Database.pdb

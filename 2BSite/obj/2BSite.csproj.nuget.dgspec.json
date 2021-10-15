@@ -1,37 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite\\2BSite.csproj": {}
+    "D:\\MyCodes\\2BSite\\2BSite\\2BSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\2BSite.Database.csproj": {
+    "D:\\MyCodes\\2BSite\\2BSite.Database\\2BSite.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\2BSite.Database.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\2BSite.Database\\2BSite.Database.csproj",
         "projectName": "2BSite.Database",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\2BSite.Database.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\2BSite.Database\\2BSite.Database.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\2BSite.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,58 +80,55 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\2BSite.Service.csproj": {
+    "D:\\MyCodes\\2BSite\\2BSite.Service\\2BSite.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\2BSite.Service.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\2BSite.Service\\2BSite.Service.csproj",
         "projectName": "2BSite.Service",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\2BSite.Service.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\2BSite.Service\\2BSite.Service.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\2BSite.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\2BSite.Database.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Database\\2BSite.Database.csproj"
+              "D:\\MyCodes\\2BSite\\2BSite.Database\\2BSite.Database.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\2BSite.Database\\2BSite.Database.csproj"
               },
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj"
+              "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj"
               },
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj"
+              "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj"
               },
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj"
+              "D:\\MyCodes\\2BSite\\Identity.Database\\Identity.Database.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\Identity.Database\\Identity.Database.csproj"
               },
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\WXSite.Database.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\WXSite.Database.csproj"
+              "D:\\MyCodes\\2BSite\\WXSite.Database\\WXSite.Database.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\WXSite.Database\\WXSite.Database.csproj"
               }
             }
           }
@@ -214,46 +208,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite\\2BSite.csproj": {
+    "D:\\MyCodes\\2BSite\\2BSite\\2BSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite\\2BSite.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\2BSite\\2BSite.csproj",
         "projectName": "2BSite",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite\\2BSite.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\2BSite\\2BSite.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\2BSite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\2BSite.Service.csproj": {
-                "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\2BSite.Service\\2BSite.Service.csproj"
+              "D:\\MyCodes\\2BSite\\2BSite.Service\\2BSite.Service.csproj": {
+                "projectPath": "D:\\MyCodes\\2BSite\\2BSite.Service\\2BSite.Service.csproj"
               }
             }
           }
@@ -373,38 +364,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj": {
+    "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj",
         "projectName": "Npoi.Mapper",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Mapper\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\Npoi.Mapper.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -452,38 +440,35 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
+    "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj",
         "projectName": "Npoi.Report",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Extension\\Npoi.Report\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\Npoi.Report.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\Extension\\Npoi.Report\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -535,38 +520,35 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj": {
+    "D:\\MyCodes\\2BSite\\Identity.Database\\Identity.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\Identity.Database\\Identity.Database.csproj",
         "projectName": "Identity.Database",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\Identity.Database.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\Identity.Database\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\Identity.Database\\Identity.Database.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\Identity.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -612,38 +594,35 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\WXSite.Database.csproj": {
+    "D:\\MyCodes\\2BSite\\WXSite.Database\\WXSite.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\WXSite.Database.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\WXSite.Database\\WXSite.Database.csproj",
         "projectName": "WXSite.Database",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\WXSite.Database.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WXSite.Database\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\WXSite.Database\\WXSite.Database.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\WXSite.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "D:\\download\\Ksd": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -695,7 +674,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

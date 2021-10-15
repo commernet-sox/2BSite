@@ -19,12 +19,10 @@
 
   <ItemGroup>
     <Reference Include="Core.Database.Extension">
-      <HintPath>D:\杭加项目\ShareDlls\Core.Database.Extension.dll</HintPath>
-      <Private>true</Private>
+      <HintPath>..\ShareDlls\Core.Database.Extension.dll</HintPath>
     </Reference>
     <Reference Include="Core.Infrastructure">
-      <HintPath>D:\杭加项目\ShareDlls\Core.Infrastructure.dll</HintPath>
-      <Private>true</Private>
+      <HintPath>..\ShareDlls\Core.Infrastructure.dll</HintPath>
     </Reference>
   </ItemGroup>
 

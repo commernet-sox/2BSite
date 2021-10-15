@@ -1,37 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj": {}
+    "D:\\MyCodes\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FS\\source\\2BSite\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj": {
+    "D:\\MyCodes\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj",
+        "projectUniqueName": "D:\\MyCodes\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj",
         "projectName": "WX_CommonService",
-        "projectPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj",
-        "packagesPath": "C:\\Users\\FS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FS\\source\\2BSite\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\obj\\",
+        "projectPath": "D:\\MyCodes\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\WX_CommonService.csproj",
+        "packagesPath": "C:\\Users\\wangfeng\\.nuget\\packages\\",
+        "outputPath": "D:\\MyCodes\\2BSite\\WX_Site\\WeiXin_WYZJ.CommonService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\FS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wangfeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://10.27.1.28:1024/nuget": {},
+          "D:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "http://10.27.1.28:1024/Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +79,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

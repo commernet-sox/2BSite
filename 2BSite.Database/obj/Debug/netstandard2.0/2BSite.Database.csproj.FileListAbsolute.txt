@@ -11,3 +11,15 @@ C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.pdb
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.AssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodes\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.deps.json
+D:\MyCodes\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.dll
+D:\MyCodes\2BSite\2BSite.Database\bin\Debug\netstandard2.0\2BSite.Database.pdb
+D:\MyCodes\2BSite\2BSite.Database\bin\Debug\netstandard2.0\Core.Database.Extension.dll
+D:\MyCodes\2BSite\2BSite.Database\bin\Debug\netstandard2.0\Core.Infrastructure.dll
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.AssemblyReference.cache
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.AssemblyInfoInputs.cache
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.AssemblyInfo.cs
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.CoreCompileInputs.cache
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.csproj.CopyComplete
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.dll
+D:\MyCodes\2BSite\2BSite.Database\obj\Debug\netstandard2.0\2BSite.Database.pdb

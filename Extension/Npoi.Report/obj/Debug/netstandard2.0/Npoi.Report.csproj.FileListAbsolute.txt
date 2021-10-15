@@ -17,3 +17,12 @@ C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.pdb
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csproj.AssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodes\2BSite\Extension\Npoi.Report\bin\Debug\netstandard2.0\Npoi.Report.deps.json
+D:\MyCodes\2BSite\Extension\Npoi.Report\bin\Debug\netstandard2.0\Npoi.Report.dll
+D:\MyCodes\2BSite\Extension\Npoi.Report\bin\Debug\netstandard2.0\Npoi.Report.pdb
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csproj.AssemblyReference.cache
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.AssemblyInfoInputs.cache
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.AssemblyInfo.cs
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.csproj.CoreCompileInputs.cache
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.dll
+D:\MyCodes\2BSite\Extension\Npoi.Report\obj\Debug\netstandard2.0\Npoi.Report.pdb

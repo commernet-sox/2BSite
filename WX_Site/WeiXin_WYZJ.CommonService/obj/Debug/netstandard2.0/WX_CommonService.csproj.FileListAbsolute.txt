@@ -8,3 +8,12 @@ C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\net
 C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.pdb
 C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.csproj.AssemblyReference.cache
 C:\Users\FS\source\2BSite\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Debug\netstandard2.0\WX_CommonService.deps.json
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Debug\netstandard2.0\WX_CommonService.dll
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\bin\Debug\netstandard2.0\WX_CommonService.pdb
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.csproj.AssemblyReference.cache
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.AssemblyInfoInputs.cache
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.AssemblyInfo.cs
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.csproj.CoreCompileInputs.cache
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.dll
+D:\MyCodes\2BSite\WX_Site\WeiXin_WYZJ.CommonService\obj\Debug\netstandard2.0\WX_CommonService.pdb
